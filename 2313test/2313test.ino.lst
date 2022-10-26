@@ -1,0 +1,731 @@
+
+C:\Myproject/2313test.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	37 c0       	rjmp	.+110    	; 0x70 <__ctors_end>
+   2:	44 c0       	rjmp	.+136    	; 0x8c <__bad_interrupt>
+   4:	43 c0       	rjmp	.+134    	; 0x8c <__bad_interrupt>
+   6:	42 c0       	rjmp	.+132    	; 0x8c <__bad_interrupt>
+   8:	41 c0       	rjmp	.+130    	; 0x8c <__bad_interrupt>
+   a:	40 c0       	rjmp	.+128    	; 0x8c <__bad_interrupt>
+   c:	53 c0       	rjmp	.+166    	; 0xb4 <__vector_6>
+   e:	3e c0       	rjmp	.+124    	; 0x8c <__bad_interrupt>
+  10:	3d c0       	rjmp	.+122    	; 0x8c <__bad_interrupt>
+  12:	3c c0       	rjmp	.+120    	; 0x8c <__bad_interrupt>
+  14:	3b c0       	rjmp	.+118    	; 0x8c <__bad_interrupt>
+  16:	3a c0       	rjmp	.+116    	; 0x8c <__bad_interrupt>
+  18:	39 c0       	rjmp	.+114    	; 0x8c <__bad_interrupt>
+  1a:	38 c0       	rjmp	.+112    	; 0x8c <__bad_interrupt>
+  1c:	37 c0       	rjmp	.+110    	; 0x8c <__bad_interrupt>
+  1e:	36 c0       	rjmp	.+108    	; 0x8c <__bad_interrupt>
+  20:	35 c0       	rjmp	.+106    	; 0x8c <__bad_interrupt>
+  22:	34 c0       	rjmp	.+104    	; 0x8c <__bad_interrupt>
+  24:	33 c0       	rjmp	.+102    	; 0x8c <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	00 00       	nop
+  28:	00 00       	nop
+  2a:	00 00       	nop
+  2c:	00 02       	muls	r16, r16
+  2e:	00 00       	nop
+  30:	00 01       	movw	r0, r0
+  32:	03 04       	cpc	r0, r3
+  34:	00 00       	nop
+	...
+
+00000038 <digital_pin_to_bit_mask_PGM>:
+  38:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  48:	80 04                                               ..
+
+0000004a <digital_pin_to_port_PGM>:
+  4a:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  5a:	02 01                                               ..
+
+0000005c <port_to_output_PGM>:
+  5c:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+00000066 <port_to_mode_PGM>:
+  66:	00 00 3a 00 37 00 00 00 31 00                       ..:.7...1.
+
+00000070 <__ctors_end>:
+__dtors_end():
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ed       	ldi	r28, 0xDF	; 223
+  76:	cd bf       	out	0x3d, r28	; 61
+
+00000078 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  78:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  7a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  7c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  7e:	01 c0       	rjmp	.+2      	; 0x82 <.do_clear_bss_start>
+
+00000080 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  80:	1d 92       	st	X+, r1
+
+00000082 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  82:	a9 36       	cpi	r26, 0x69	; 105
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  84:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  86:	e1 f7       	brne	.-8      	; 0x80 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  88:	50 d1       	rcall	.+672    	; 0x32a <main>
+  8a:	55 c1       	rjmp	.+682    	; 0x336 <_exit>
+
+0000008c <__bad_interrupt>:
+__vector_1():
+  8c:	b9 cf       	rjmp	.-142    	; 0x0 <__vectors>
+
+0000008e <setup>:
+setup():
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:9
+
+
+void setup() {
+  // put your setup code here, to run once:
+ 
+  pinMode(ledPin, OUTPUT);
+  8e:	61 e0       	ldi	r22, 0x01	; 1
+  90:	87 e0       	ldi	r24, 0x07	; 7
+  92:	dc c0       	rjmp	.+440    	; 0x24c <pinMode>
+
+00000094 <loop>:
+loop():
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:14
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(ledPin, 1);
+  94:	61 e0       	ldi	r22, 0x01	; 1
+  96:	87 e0       	ldi	r24, 0x07	; 7
+  98:	17 d1       	rcall	.+558    	; 0x2c8 <digitalWrite>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:15
+  delay(1000);
+  9a:	68 ee       	ldi	r22, 0xE8	; 232
+  9c:	73 e0       	ldi	r23, 0x03	; 3
+  9e:	80 e0       	ldi	r24, 0x00	; 0
+  a0:	90 e0       	ldi	r25, 0x00	; 0
+  a2:	79 d0       	rcall	.+242    	; 0x196 <delay>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:16
+  digitalWrite(ledPin, 0);
+  a4:	60 e0       	ldi	r22, 0x00	; 0
+  a6:	87 e0       	ldi	r24, 0x07	; 7
+  a8:	0f d1       	rcall	.+542    	; 0x2c8 <digitalWrite>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:17
+  delay(1000);
+  aa:	68 ee       	ldi	r22, 0xE8	; 232
+  ac:	73 e0       	ldi	r23, 0x03	; 3
+  ae:	80 e0       	ldi	r24, 0x00	; 0
+  b0:	90 e0       	ldi	r25, 0x00	; 0
+  b2:	71 c0       	rjmp	.+226    	; 0x196 <delay>
+
+000000b4 <__vector_6>:
+__vector_6():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:592
+#endif
+  #if INITIALIZE_SECONDARY_TIMERS
+  // Prepare the timer for PWM
+    initToneTimerInternal();
+  #endif
+}
+  b4:	1f 92       	push	r1
+  b6:	0f 92       	push	r0
+  b8:	0f b6       	in	r0, 0x3f	; 63
+  ba:	0f 92       	push	r0
+  bc:	11 24       	eor	r1, r1
+  be:	2f 93       	push	r18
+  c0:	3f 93       	push	r19
+  c2:	8f 93       	push	r24
+  c4:	9f 93       	push	r25
+  c6:	af 93       	push	r26
+  c8:	bf 93       	push	r27
+  ca:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <millis_timer_millis>
+  ce:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <millis_timer_millis+0x1>
+  d2:	a0 91 63 00 	lds	r26, 0x0063	; 0x800063 <millis_timer_millis+0x2>
+  d6:	b0 91 64 00 	lds	r27, 0x0064	; 0x800064 <millis_timer_millis+0x3>
+  da:	30 91 60 00 	lds	r19, 0x0060	; 0x800060 <_edata>
+  de:	26 e0       	ldi	r18, 0x06	; 6
+  e0:	23 0f       	add	r18, r19
+  e2:	2d 37       	cpi	r18, 0x7D	; 125
+  e4:	68 f1       	brcs	.+90     	; 0x140 <__stack+0x61>
+  e6:	29 e8       	ldi	r18, 0x89	; 137
+  e8:	23 0f       	add	r18, r19
+  ea:	03 96       	adiw	r24, 0x03	; 3
+  ec:	a1 1d       	adc	r26, r1
+  ee:	b1 1d       	adc	r27, r1
+  f0:	20 93 60 00 	sts	0x0060, r18	; 0x800060 <_edata>
+  f4:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <millis_timer_millis>
+  f8:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <millis_timer_millis+0x1>
+  fc:	a0 93 63 00 	sts	0x0063, r26	; 0x800063 <millis_timer_millis+0x2>
+ 100:	b0 93 64 00 	sts	0x0064, r27	; 0x800064 <millis_timer_millis+0x3>
+ 104:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <millis_timer_overflow_count>
+ 108:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <millis_timer_overflow_count+0x1>
+ 10c:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <millis_timer_overflow_count+0x2>
+ 110:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <millis_timer_overflow_count+0x3>
+ 114:	01 96       	adiw	r24, 0x01	; 1
+ 116:	a1 1d       	adc	r26, r1
+ 118:	b1 1d       	adc	r27, r1
+ 11a:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <millis_timer_overflow_count>
+ 11e:	90 93 66 00 	sts	0x0066, r25	; 0x800066 <millis_timer_overflow_count+0x1>
+ 122:	a0 93 67 00 	sts	0x0067, r26	; 0x800067 <millis_timer_overflow_count+0x2>
+ 126:	b0 93 68 00 	sts	0x0068, r27	; 0x800068 <millis_timer_overflow_count+0x3>
+ 12a:	bf 91       	pop	r27
+ 12c:	af 91       	pop	r26
+ 12e:	9f 91       	pop	r25
+ 130:	8f 91       	pop	r24
+ 132:	3f 91       	pop	r19
+ 134:	2f 91       	pop	r18
+ 136:	0f 90       	pop	r0
+ 138:	0f be       	out	0x3f, r0	; 63
+ 13a:	0f 90       	pop	r0
+ 13c:	1f 90       	pop	r1
+ 13e:	18 95       	reti
+ 140:	02 96       	adiw	r24, 0x02	; 2
+ 142:	a1 1d       	adc	r26, r1
+ 144:	b1 1d       	adc	r27, r1
+ 146:	d4 cf       	rjmp	.-88     	; 0xf0 <__stack+0x11>
+
+00000148 <micros>:
+micros():
+ 148:	3f b7       	in	r19, 0x3f	; 63
+ 14a:	f8 94       	cli
+ 14c:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <millis_timer_overflow_count>
+ 150:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <millis_timer_overflow_count+0x1>
+ 154:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <millis_timer_overflow_count+0x2>
+ 158:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <millis_timer_overflow_count+0x3>
+ 15c:	22 b7       	in	r18, 0x32	; 50
+ 15e:	08 b6       	in	r0, 0x38	; 56
+ 160:	01 fe       	sbrs	r0, 1
+ 162:	05 c0       	rjmp	.+10     	; 0x16e <micros+0x26>
+ 164:	2f 3f       	cpi	r18, 0xFF	; 255
+ 166:	19 f0       	breq	.+6      	; 0x16e <micros+0x26>
+ 168:	01 96       	adiw	r24, 0x01	; 1
+ 16a:	a1 1d       	adc	r26, r1
+ 16c:	b1 1d       	adc	r27, r1
+ 16e:	3f bf       	out	0x3f, r19	; 63
+ 170:	ba 2f       	mov	r27, r26
+ 172:	a9 2f       	mov	r26, r25
+ 174:	98 2f       	mov	r25, r24
+ 176:	88 27       	eor	r24, r24
+ 178:	bc 01       	movw	r22, r24
+ 17a:	cd 01       	movw	r24, r26
+ 17c:	62 0f       	add	r22, r18
+ 17e:	71 1d       	adc	r23, r1
+ 180:	81 1d       	adc	r24, r1
+ 182:	91 1d       	adc	r25, r1
+ 184:	43 e0       	ldi	r20, 0x03	; 3
+ 186:	66 0f       	add	r22, r22
+ 188:	77 1f       	adc	r23, r23
+ 18a:	88 1f       	adc	r24, r24
+ 18c:	99 1f       	adc	r25, r25
+ 18e:	4a 95       	dec	r20
+ 190:	d1 f7       	brne	.-12     	; 0x186 <micros+0x3e>
+ 192:	08 95       	ret
+
+00000194 <yield>:
+__empty():
+ 194:	08 95       	ret
+
+00000196 <delay>:
+delay():
+ 196:	cf 92       	push	r12
+ 198:	df 92       	push	r13
+ 19a:	ef 92       	push	r14
+ 19c:	ff 92       	push	r15
+ 19e:	cf 93       	push	r28
+ 1a0:	df 93       	push	r29
+ 1a2:	6b 01       	movw	r12, r22
+ 1a4:	7c 01       	movw	r14, r24
+ 1a6:	d0 df       	rcall	.-96     	; 0x148 <micros>
+ 1a8:	eb 01       	movw	r28, r22
+ 1aa:	c1 14       	cp	r12, r1
+ 1ac:	d1 04       	cpc	r13, r1
+ 1ae:	e1 04       	cpc	r14, r1
+ 1b0:	f1 04       	cpc	r15, r1
+ 1b2:	61 f0       	breq	.+24     	; 0x1cc <delay+0x36>
+ 1b4:	ef df       	rcall	.-34     	; 0x194 <yield>
+ 1b6:	c8 df       	rcall	.-112    	; 0x148 <micros>
+ 1b8:	6c 1b       	sub	r22, r28
+ 1ba:	7d 0b       	sbc	r23, r29
+ 1bc:	68 3e       	cpi	r22, 0xE8	; 232
+ 1be:	73 40       	sbci	r23, 0x03	; 3
+ 1c0:	a0 f3       	brcs	.-24     	; 0x1aa <delay+0x14>
+ 1c2:	c1 14       	cp	r12, r1
+ 1c4:	d1 04       	cpc	r13, r1
+ 1c6:	e1 04       	cpc	r14, r1
+ 1c8:	f1 04       	cpc	r15, r1
+ 1ca:	39 f4       	brne	.+14     	; 0x1da <delay+0x44>
+ 1cc:	df 91       	pop	r29
+ 1ce:	cf 91       	pop	r28
+ 1d0:	ff 90       	pop	r15
+ 1d2:	ef 90       	pop	r14
+ 1d4:	df 90       	pop	r13
+ 1d6:	cf 90       	pop	r12
+ 1d8:	08 95       	ret
+ 1da:	81 e0       	ldi	r24, 0x01	; 1
+ 1dc:	c8 1a       	sub	r12, r24
+ 1de:	d1 08       	sbc	r13, r1
+ 1e0:	e1 08       	sbc	r14, r1
+ 1e2:	f1 08       	sbc	r15, r1
+ 1e4:	c8 51       	subi	r28, 0x18	; 24
+ 1e6:	dc 4f       	sbci	r29, 0xFC	; 252
+ 1e8:	e6 cf       	rjmp	.-52     	; 0x1b6 <delay+0x20>
+
+000001ea <init>:
+init():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:753
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 1ea:	80 b7       	in	r24, 0x30	; 48
+ 1ec:	82 60       	ori	r24, 0x02	; 2
+ 1ee:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:754
+  sbi(TCCR0A, WGM00);
+ 1f0:	80 b7       	in	r24, 0x30	; 48
+ 1f2:	81 60       	ori	r24, 0x01	; 1
+ 1f4:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:777
+  #endif
+  
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 1f6:	83 b7       	in	r24, 0x33	; 51
+ 1f8:	88 7f       	andi	r24, 0xF8	; 248
+ 1fa:	83 60       	ori	r24, 0x03	; 3
+ 1fc:	83 bf       	out	0x33, r24	; 51
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:789
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 1fe:	78 94       	sei
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:793
+  
+  // Enable the overlow interrupt (this is the basic system tic-toc for millis)
+  #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  sbi(TIMSK, TOIE0);
+ 200:	89 b7       	in	r24, 0x39	; 57
+ 202:	82 60       	ori	r24, 0x02	; 2
+ 204:	89 bf       	out	0x39, r24	; 57
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:818
+	ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+    // enable a2d conversions
+    sbi(ADCSRA, ADEN);
+  #endif
+  #endif
+}
+ 206:	08 95       	ret
+
+00000208 <turnOffPWM>:
+turnOffPWM():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+	#if defined(TCCR0A) && defined(COM0A1)
+	if( timer == TIMER0A){
+ 208:	81 30       	cpi	r24, 0x01	; 1
+ 20a:	39 f4       	brne	.+14     	; 0x21a <turnOffPWM+0x12>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:68
+		cbi(TCCR0A, COM0A1);
+ 20c:	80 b7       	in	r24, 0x30	; 48
+ 20e:	8f 77       	andi	r24, 0x7F	; 127
+ 210:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:69
+		cbi(TCCR0A, COM0A0);
+ 212:	80 b7       	in	r24, 0x30	; 48
+ 214:	8f 7b       	andi	r24, 0xBF	; 191
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:76
+	#endif
+
+	#if defined(TCCR0A) && defined(COM0B1)
+	if( timer == TIMER0B){
+		cbi(TCCR0A, COM0B1);
+		cbi(TCCR0A, COM0B0);
+ 216:	80 bf       	out	0x30, r24	; 48
+ 218:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:74
+		cbi(TCCR0A, COM0A0);
+	} else
+	#endif
+
+	#if defined(TCCR0A) && defined(COM0B1)
+	if( timer == TIMER0B){
+ 21a:	82 30       	cpi	r24, 0x02	; 2
+ 21c:	31 f4       	brne	.+12     	; 0x22a <turnOffPWM+0x22>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:75
+		cbi(TCCR0A, COM0B1);
+ 21e:	80 b7       	in	r24, 0x30	; 48
+ 220:	8f 7d       	andi	r24, 0xDF	; 223
+ 222:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:76
+		cbi(TCCR0A, COM0B0);
+ 224:	80 b7       	in	r24, 0x30	; 48
+ 226:	8f 7e       	andi	r24, 0xEF	; 239
+ 228:	f6 cf       	rjmp	.-20     	; 0x216 <turnOffPWM+0xe>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:81
+	} else
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1A1)
+	if( timer == TIMER1A){
+ 22a:	83 30       	cpi	r24, 0x03	; 3
+ 22c:	39 f4       	brne	.+14     	; 0x23c <turnOffPWM+0x34>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:82
+		cbi(TCCR1A, COM1A1);
+ 22e:	8f b5       	in	r24, 0x2f	; 47
+ 230:	8f 77       	andi	r24, 0x7F	; 127
+ 232:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:83
+		cbi(TCCR1A, COM1A0);
+ 234:	8f b5       	in	r24, 0x2f	; 47
+ 236:	8f 7b       	andi	r24, 0xBF	; 191
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:117
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1B1)
+	if( timer == TIMER1B){
+		cbi(TCCR1A, COM1B1);
+		cbi(TCCR1A, COM1B0);
+ 238:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:134
+	#endif
+	
+    {
+    }
+
+}
+ 23a:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:115
+	#endif
+	} else
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1B1)
+	if( timer == TIMER1B){
+ 23c:	84 30       	cpi	r24, 0x04	; 4
+ 23e:	e9 f7       	brne	.-6      	; 0x23a <turnOffPWM+0x32>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:116
+		cbi(TCCR1A, COM1B1);
+ 240:	8f b5       	in	r24, 0x2f	; 47
+ 242:	8f 7d       	andi	r24, 0xDF	; 223
+ 244:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:117
+		cbi(TCCR1A, COM1B0);
+ 246:	8f b5       	in	r24, 0x2f	; 47
+ 248:	8f 7e       	andi	r24, 0xEF	; 239
+ 24a:	f6 cf       	rjmp	.-20     	; 0x238 <turnOffPWM+0x30>
+
+0000024c <pinMode>:
+pinMode():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 24c:	cf 93       	push	r28
+ 24e:	df 93       	push	r29
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:34
+	if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 250:	87 fd       	sbrc	r24, 7
+ 252:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:35
+	uint8_t bit = digitalPinToBitMask(pin);
+ 254:	90 e0       	ldi	r25, 0x00	; 0
+ 256:	fc 01       	movw	r30, r24
+ 258:	e8 5c       	subi	r30, 0xC8	; 200
+ 25a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 25c:	24 91       	lpm	r18, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:36
+	uint8_t port = digitalPinToPort(pin);
+ 25e:	86 5b       	subi	r24, 0xB6	; 182
+ 260:	9f 4f       	sbci	r25, 0xFF	; 255
+ 262:	fc 01       	movw	r30, r24
+ 264:	84 91       	lpm	r24, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:39
+	volatile uint8_t *reg, *out;
+
+	if (port == NOT_A_PIN) return;
+ 266:	88 23       	and	r24, r24
+ 268:	c9 f0       	breq	.+50     	; 0x29c <pinMode+0x50>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:41
+
+	reg = portModeRegister(port);
+ 26a:	90 e0       	ldi	r25, 0x00	; 0
+ 26c:	88 0f       	add	r24, r24
+ 26e:	99 1f       	adc	r25, r25
+ 270:	fc 01       	movw	r30, r24
+ 272:	ea 59       	subi	r30, 0x9A	; 154
+ 274:	ff 4f       	sbci	r31, 0xFF	; 255
+ 276:	a5 91       	lpm	r26, Z+
+ 278:	b4 91       	lpm	r27, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:42
+	out = portOutputRegister(port);
+ 27a:	fc 01       	movw	r30, r24
+ 27c:	e4 5a       	subi	r30, 0xA4	; 164
+ 27e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 280:	c5 91       	lpm	r28, Z+
+ 282:	d4 91       	lpm	r29, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:44
+
+	if (mode == INPUT) { 
+ 284:	61 11       	cpse	r22, r1
+ 286:	0d c0       	rjmp	.+26     	; 0x2a2 <pinMode+0x56>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:45
+		uint8_t oldSREG = SREG;
+ 288:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 28a:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:47
+		*reg &= ~bit;
+ 28c:	8c 91       	ld	r24, X
+ 28e:	20 95       	com	r18
+ 290:	82 23       	and	r24, r18
+ 292:	8c 93       	st	X, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:48
+		*out &= ~bit;
+ 294:	88 81       	ld	r24, Y
+ 296:	28 23       	and	r18, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:54
+		SREG = oldSREG;
+	} else if (mode == INPUT_PULLUP) {
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg &= ~bit;
+		*out |= bit;
+ 298:	28 83       	st	Y, r18
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:55
+		SREG = oldSREG;
+ 29a:	9f bf       	out	0x3f, r25	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:62
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg |= bit;
+		SREG = oldSREG;
+	}
+}
+ 29c:	df 91       	pop	r29
+ 29e:	cf 91       	pop	r28
+ 2a0:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:50
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg &= ~bit;
+		*out &= ~bit;
+		SREG = oldSREG;
+	} else if (mode == INPUT_PULLUP) {
+ 2a2:	62 30       	cpi	r22, 0x02	; 2
+ 2a4:	51 f4       	brne	.+20     	; 0x2ba <pinMode+0x6e>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:51
+		uint8_t oldSREG = SREG;
+ 2a6:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:52
+                cli();
+ 2a8:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:53
+		*reg &= ~bit;
+ 2aa:	3c 91       	ld	r19, X
+ 2ac:	82 2f       	mov	r24, r18
+ 2ae:	80 95       	com	r24
+ 2b0:	83 23       	and	r24, r19
+ 2b2:	8c 93       	st	X, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:54
+		*out |= bit;
+ 2b4:	e8 81       	ld	r30, Y
+ 2b6:	2e 2b       	or	r18, r30
+ 2b8:	ef cf       	rjmp	.-34     	; 0x298 <pinMode+0x4c>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:57
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+ 2ba:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:58
+                cli();
+ 2bc:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:59
+		*reg |= bit;
+ 2be:	ec 91       	ld	r30, X
+ 2c0:	2e 2b       	or	r18, r30
+ 2c2:	2c 93       	st	X, r18
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:60
+		SREG = oldSREG;
+ 2c4:	8f bf       	out	0x3f, r24	; 63
+ 2c6:	ea cf       	rjmp	.-44     	; 0x29c <pinMode+0x50>
+
+000002c8 <digitalWrite>:
+digitalWrite():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:137
+    }
+
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 2c8:	1f 93       	push	r17
+ 2ca:	cf 93       	push	r28
+ 2cc:	df 93       	push	r29
+ 2ce:	16 2f       	mov	r17, r22
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:138
+	if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 2d0:	87 fd       	sbrc	r24, 7
+ 2d2:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:139
+	uint8_t timer = digitalPinToTimer(pin);
+ 2d4:	28 2f       	mov	r18, r24
+ 2d6:	30 e0       	ldi	r19, 0x00	; 0
+ 2d8:	f9 01       	movw	r30, r18
+ 2da:	ea 5d       	subi	r30, 0xDA	; 218
+ 2dc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2de:	84 91       	lpm	r24, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:140
+	uint8_t bit = digitalPinToBitMask(pin);
+ 2e0:	f9 01       	movw	r30, r18
+ 2e2:	e8 5c       	subi	r30, 0xC8	; 200
+ 2e4:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2e6:	d4 91       	lpm	r29, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:141
+	uint8_t port = digitalPinToPort(pin);
+ 2e8:	f9 01       	movw	r30, r18
+ 2ea:	e6 5b       	subi	r30, 0xB6	; 182
+ 2ec:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2ee:	c4 91       	lpm	r28, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:144
+	volatile uint8_t *out;
+
+	if (port == NOT_A_PIN) return;
+ 2f0:	cc 23       	and	r28, r28
+ 2f2:	99 f0       	breq	.+38     	; 0x31a <digitalWrite+0x52>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:148
+
+	// If the pin that support PWM output, we need to turn it off
+	// before doing a digital write.
+	if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 2f4:	81 11       	cpse	r24, r1
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:148 (discriminator 1)
+ 2f6:	88 df       	rcall	.-240    	; 0x208 <turnOffPWM>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:150
+
+	out = portOutputRegister(port);
+ 2f8:	ec 2f       	mov	r30, r28
+ 2fa:	f0 e0       	ldi	r31, 0x00	; 0
+ 2fc:	ee 0f       	add	r30, r30
+ 2fe:	ff 1f       	adc	r31, r31
+ 300:	e4 5a       	subi	r30, 0xA4	; 164
+ 302:	ff 4f       	sbci	r31, 0xFF	; 255
+ 304:	a5 91       	lpm	r26, Z+
+ 306:	b4 91       	lpm	r27, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:153
+
+	if (val == LOW) {
+		uint8_t oldSREG = SREG;
+ 308:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:152
+	// before doing a digital write.
+	if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+	out = portOutputRegister(port);
+
+	if (val == LOW) {
+ 30a:	11 11       	cpse	r17, r1
+ 30c:	0a c0       	rjmp	.+20     	; 0x322 <digitalWrite+0x5a>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:154
+		uint8_t oldSREG = SREG;
+    cli();
+ 30e:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:155
+		*out &= ~bit;
+ 310:	ec 91       	ld	r30, X
+ 312:	d0 95       	com	r29
+ 314:	de 23       	and	r29, r30
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:160
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+    cli();
+		*out |= bit;
+ 316:	dc 93       	st	X, r29
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:161
+		SREG = oldSREG;
+ 318:	8f bf       	out	0x3f, r24	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:163
+	}
+}
+ 31a:	df 91       	pop	r29
+ 31c:	cf 91       	pop	r28
+ 31e:	1f 91       	pop	r17
+ 320:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:159
+    cli();
+		*out &= ~bit;
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+    cli();
+ 322:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:160
+		*out |= bit;
+ 324:	ec 91       	ld	r30, X
+ 326:	de 2b       	or	r29, r30
+ 328:	f6 cf       	rjmp	.-20     	; 0x316 <digitalWrite+0x4e>
+
+0000032a <main>:
+main():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+	#ifdef TUNED_OSCCAL_VALUE
+	OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 32a:	81 b7       	in	r24, 0x31	; 49
+ 32c:	81 bf       	out	0x31, r24	; 49
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:8
+    #endif
+    init();
+ 32e:	5d df       	rcall	.-326    	; 0x1ea <init>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:10
+
+	setup();
+ 330:	ae de       	rcall	.-676    	; 0x8e <setup>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:13 (discriminator 1)
+    
+	for (;;)
+		loop();
+ 332:	b0 de       	rcall	.-672    	; 0x94 <loop>
+ 334:	fe cf       	rjmp	.-4      	; 0x332 <main+0x8>
+
+00000336 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 336:	f8 94       	cli
+
+00000338 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 338:	ff cf       	rjmp	.-2      	; 0x338 <__stop_program>

@@ -1,0 +1,1224 @@
+
+C:\Users\rOnan\AppData\Local\Temp\arduino-sketch-9A2FADC168F332EFEC9A56A4222ABE58/2313test.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	2a c0       	rjmp	.+84     	; 0x58 <__bad_interrupt>
+   4:	29 c0       	rjmp	.+82     	; 0x58 <__bad_interrupt>
+   6:	28 c0       	rjmp	.+80     	; 0x58 <__bad_interrupt>
+   8:	27 c0       	rjmp	.+78     	; 0x58 <__bad_interrupt>
+   a:	26 c0       	rjmp	.+76     	; 0x58 <__bad_interrupt>
+   c:	1d c1       	rjmp	.+570    	; 0x248 <__vector_6>
+   e:	24 c0       	rjmp	.+72     	; 0x58 <__bad_interrupt>
+  10:	23 c0       	rjmp	.+70     	; 0x58 <__bad_interrupt>
+  12:	22 c0       	rjmp	.+68     	; 0x58 <__bad_interrupt>
+  14:	21 c0       	rjmp	.+66     	; 0x58 <__bad_interrupt>
+  16:	20 c0       	rjmp	.+64     	; 0x58 <__bad_interrupt>
+  18:	1f c0       	rjmp	.+62     	; 0x58 <__bad_interrupt>
+  1a:	1e c0       	rjmp	.+60     	; 0x58 <__bad_interrupt>
+  1c:	1d c0       	rjmp	.+58     	; 0x58 <__bad_interrupt>
+  1e:	1c c0       	rjmp	.+56     	; 0x58 <__bad_interrupt>
+  20:	1b c0       	rjmp	.+54     	; 0x58 <__bad_interrupt>
+  22:	1a c0       	rjmp	.+52     	; 0x58 <__bad_interrupt>
+  24:	19 c0       	rjmp	.+50     	; 0x58 <__bad_interrupt>
+
+00000026 <__ctors_end>:
+__trampolines_start():
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf ed       	ldi	r28, 0xDF	; 223
+  2c:	cd bf       	out	0x3d, r28	; 61
+
+0000002e <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  2e:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  30:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  32:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  34:	e0 e7       	ldi	r30, 0x70	; 112
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  36:	f6 e0       	ldi	r31, 0x06	; 6
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  38:	02 c0       	rjmp	.+4      	; 0x3e <__SP_L__+0x1>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  3a:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  3c:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  3e:	aa 36       	cpi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  40:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  42:	d9 f7       	brne	.-10     	; 0x3a <__do_copy_data+0xc>
+
+00000044 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  44:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  46:	aa e6       	ldi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  48:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  4a:	01 c0       	rjmp	.+2      	; 0x4e <.do_clear_bss_start>
+
+0000004c <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  4c:	1d 92       	st	X+, r1
+
+0000004e <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  4e:	a3 37       	cpi	r26, 0x73	; 115
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  50:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  52:	e1 f7       	brne	.-8      	; 0x4c <.do_clear_bss_loop>
+.do_clear_bss_start():
+  54:	f3 d0       	rcall	.+486    	; 0x23c <main>
+  56:	0a c3       	rjmp	.+1556   	; 0x66c <_exit>
+
+00000058 <__bad_interrupt>:
+__vector_1():
+  58:	d3 cf       	rjmp	.-90     	; 0x0 <__vectors>
+
+0000005a <setup>:
+setup():
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:36
+  SEG_A & SEG_B & SEG_C & SEG_D & SEG_E & SEG_F & SEG_G, // 8
+  SEG_A & SEG_B & SEG_C & SEG_D & SEG_F & SEG_G  // 9
+};
+
+void setup() {
+  DDRB = ALL_HIGH; // set port A all pins as output
+  5a:	8f ef       	ldi	r24, 0xFF	; 255
+  5c:	87 bb       	out	0x17, r24	; 23
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:37
+  DDRD = B01111111; // set common anode pins as output
+  5e:	8f e7       	ldi	r24, 0x7F	; 127
+  60:	81 bb       	out	0x11, r24	; 17
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:38
+}
+  62:	08 95       	ret
+
+00000064 <loop>:
+loop():
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:40
+
+void loop() {
+  64:	4f 92       	push	r4
+  66:	5f 92       	push	r5
+  68:	6f 92       	push	r6
+  6a:	7f 92       	push	r7
+  6c:	8f 92       	push	r8
+  6e:	9f 92       	push	r9
+  70:	af 92       	push	r10
+  72:	bf 92       	push	r11
+  74:	cf 92       	push	r12
+  76:	df 92       	push	r13
+  78:	ef 92       	push	r14
+  7a:	ff 92       	push	r15
+  7c:	cf 93       	push	r28
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:42
+  // double sdf = getTempDS18B20();
+  long tmp = getTempDS18B20(); // number of seconds
+  7e:	b9 d0       	rcall	.+370    	; 0x1f2 <getTempDS18B20()>
+  80:	8d d1       	rcall	.+794    	; 0x39c <__fixsfsi>
+  82:	4b 01       	movw	r8, r22
+  84:	5c 01       	movw	r10, r24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:43
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  86:	cf ef       	ldi	r28, 0xFF	; 255
+  88:	c8 bb       	out	0x18, r28	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:44
+  PORTD = DIGIT_4; // switch to first digit
+  8a:	88 e0       	ldi	r24, 0x08	; 8
+  8c:	82 bb       	out	0x12, r24	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:45
+  PORTB = digit[tmp % 10]; // show 0-9
+  8e:	8a e0       	ldi	r24, 0x0A	; 10
+  90:	c8 2e       	mov	r12, r24
+  92:	d1 2c       	mov	r13, r1
+  94:	e1 2c       	mov	r14, r1
+  96:	f1 2c       	mov	r15, r1
+  98:	c5 01       	movw	r24, r10
+  9a:	b4 01       	movw	r22, r8
+  9c:	a7 01       	movw	r20, r14
+  9e:	96 01       	movw	r18, r12
+  a0:	a7 d2       	rcall	.+1358   	; 0x5f0 <__divmodsi4>
+  a2:	29 01       	movw	r4, r18
+  a4:	3a 01       	movw	r6, r20
+  a6:	60 5a       	subi	r22, 0xA0	; 160
+  a8:	7f 4f       	sbci	r23, 0xFF	; 255
+  aa:	fb 01       	movw	r30, r22
+  ac:	80 81       	ld	r24, Z
+  ae:	88 bb       	out	0x18, r24	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:46
+  delay(DEL);
+  b0:	6a e0       	ldi	r22, 0x0A	; 10
+  b2:	70 e0       	ldi	r23, 0x00	; 0
+  b4:	80 e0       	ldi	r24, 0x00	; 0
+  b6:	90 e0       	ldi	r25, 0x00	; 0
+  b8:	38 d1       	rcall	.+624    	; 0x32a <delay>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:49
+
+  tmp = tmp / 10; // number of ten seconds
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  ba:	c8 bb       	out	0x18, r28	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:50
+  PORTD = DIGIT_3; // switch to second digit
+  bc:	80 e1       	ldi	r24, 0x10	; 16
+  be:	82 bb       	out	0x12, r24	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:51
+  PORTB = digit[tmp % 6]; // show 0-5
+  c0:	c3 01       	movw	r24, r6
+  c2:	b2 01       	movw	r22, r4
+  c4:	26 e0       	ldi	r18, 0x06	; 6
+  c6:	30 e0       	ldi	r19, 0x00	; 0
+  c8:	40 e0       	ldi	r20, 0x00	; 0
+  ca:	50 e0       	ldi	r21, 0x00	; 0
+  cc:	91 d2       	rcall	.+1314   	; 0x5f0 <__divmodsi4>
+  ce:	60 5a       	subi	r22, 0xA0	; 160
+  d0:	7f 4f       	sbci	r23, 0xFF	; 255
+  d2:	fb 01       	movw	r30, r22
+  d4:	80 81       	ld	r24, Z
+  d6:	88 bb       	out	0x18, r24	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:52
+  delay(DEL);
+  d8:	6a e0       	ldi	r22, 0x0A	; 10
+  da:	70 e0       	ldi	r23, 0x00	; 0
+  dc:	80 e0       	ldi	r24, 0x00	; 0
+  de:	90 e0       	ldi	r25, 0x00	; 0
+  e0:	24 d1       	rcall	.+584    	; 0x32a <delay>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:55
+
+  tmp = tmp / 6; // number of minutes
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  e2:	c8 bb       	out	0x18, r28	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:56
+  PORTD = DIGIT_2; // switch to third digit
+  e4:	84 e0       	ldi	r24, 0x04	; 4
+  e6:	82 bb       	out	0x12, r24	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:54
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  PORTD = DIGIT_3; // switch to second digit
+  PORTB = digit[tmp % 6]; // show 0-5
+  delay(DEL);
+
+  tmp = tmp / 6; // number of minutes
+  e8:	c5 01       	movw	r24, r10
+  ea:	b4 01       	movw	r22, r8
+  ec:	2c e3       	ldi	r18, 0x3C	; 60
+  ee:	30 e0       	ldi	r19, 0x00	; 0
+  f0:	40 e0       	ldi	r20, 0x00	; 0
+  f2:	50 e0       	ldi	r21, 0x00	; 0
+  f4:	7d d2       	rcall	.+1274   	; 0x5f0 <__divmodsi4>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:57
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  PORTD = DIGIT_2; // switch to third digit
+  PORTB = digit[tmp % 10]; // show 0-9
+  f6:	ca 01       	movw	r24, r20
+  f8:	b9 01       	movw	r22, r18
+  fa:	a7 01       	movw	r20, r14
+  fc:	96 01       	movw	r18, r12
+  fe:	78 d2       	rcall	.+1264   	; 0x5f0 <__divmodsi4>
+ 100:	60 5a       	subi	r22, 0xA0	; 160
+ 102:	7f 4f       	sbci	r23, 0xFF	; 255
+ 104:	fb 01       	movw	r30, r22
+ 106:	80 81       	ld	r24, Z
+ 108:	88 bb       	out	0x18, r24	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:58
+  delay(DEL);
+ 10a:	6a e0       	ldi	r22, 0x0A	; 10
+ 10c:	70 e0       	ldi	r23, 0x00	; 0
+ 10e:	80 e0       	ldi	r24, 0x00	; 0
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ 112:	0b d1       	rcall	.+534    	; 0x32a <delay>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:61
+
+  tmp = tmp / 10; // number of 10 minutes
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+ 114:	c8 bb       	out	0x18, r28	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:62
+  PORTD = DIGIT_1; // switch to forth digit
+ 116:	80 e4       	ldi	r24, 0x40	; 64
+ 118:	82 bb       	out	0x12, r24	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:60
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  PORTD = DIGIT_2; // switch to third digit
+  PORTB = digit[tmp % 10]; // show 0-9
+  delay(DEL);
+
+  tmp = tmp / 10; // number of 10 minutes
+ 11a:	c5 01       	movw	r24, r10
+ 11c:	b4 01       	movw	r22, r8
+ 11e:	28 e5       	ldi	r18, 0x58	; 88
+ 120:	32 e0       	ldi	r19, 0x02	; 2
+ 122:	40 e0       	ldi	r20, 0x00	; 0
+ 124:	50 e0       	ldi	r21, 0x00	; 0
+ 126:	64 d2       	rcall	.+1224   	; 0x5f0 <__divmodsi4>
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:63
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  PORTD = DIGIT_1; // switch to forth digit
+  PORTB = digit[tmp % 10]; // show 0-9
+ 128:	ca 01       	movw	r24, r20
+ 12a:	b9 01       	movw	r22, r18
+ 12c:	a7 01       	movw	r20, r14
+ 12e:	96 01       	movw	r18, r12
+ 130:	5f d2       	rcall	.+1214   	; 0x5f0 <__divmodsi4>
+ 132:	60 5a       	subi	r22, 0xA0	; 160
+ 134:	7f 4f       	sbci	r23, 0xFF	; 255
+ 136:	fb 01       	movw	r30, r22
+ 138:	80 81       	ld	r24, Z
+ 13a:	88 bb       	out	0x18, r24	; 24
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:64
+  delay(DEL);
+ 13c:	6a e0       	ldi	r22, 0x0A	; 10
+ 13e:	70 e0       	ldi	r23, 0x00	; 0
+ 140:	80 e0       	ldi	r24, 0x00	; 0
+ 142:	90 e0       	ldi	r25, 0x00	; 0
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:67
+
+  
+ 144:	cf 91       	pop	r28
+ 146:	ff 90       	pop	r15
+ 148:	ef 90       	pop	r14
+ 14a:	df 90       	pop	r13
+ 14c:	cf 90       	pop	r12
+ 14e:	bf 90       	pop	r11
+ 150:	af 90       	pop	r10
+ 152:	9f 90       	pop	r9
+ 154:	8f 90       	pop	r8
+ 156:	7f 90       	pop	r7
+ 158:	6f 90       	pop	r6
+ 15a:	5f 90       	pop	r5
+ 15c:	4f 90       	pop	r4
+C:\Users\rOnan\Documents\Arduino\2313test/2313test.ino:64
+
+  tmp = tmp / 10; // number of 10 minutes
+  PORTB = ALL_HIGH; // reset PORT A all pins to HIGH
+  PORTD = DIGIT_1; // switch to forth digit
+  PORTB = digit[tmp % 10]; // show 0-9
+  delay(DEL);
+ 15e:	e5 c0       	rjmp	.+458    	; 0x32a <delay>
+
+00000160 <resetDS18B20()>:
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:16
+ 160:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:17
+ 162:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 164:	8f eb       	ldi	r24, 0xBF	; 191
+ 166:	93 e0       	ldi	r25, 0x03	; 3
+ 168:	01 97       	sbiw	r24, 0x01	; 1
+ 16a:	f1 f7       	brne	.-4      	; 0x168 <resetDS18B20()+0x8>
+ 16c:	00 c0       	rjmp	.+0      	; 0x16e <resetDS18B20()+0xe>
+ 16e:	00 00       	nop
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:21
+ 170:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 172:	90 ea       	ldi	r25, 0xA0	; 160
+ 174:	9a 95       	dec	r25
+ 176:	f1 f7       	brne	.-4      	; 0x174 <resetDS18B20()+0x14>
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:25
+ 178:	80 b3       	in	r24, 0x10	; 16
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 17a:	e7 e4       	ldi	r30, 0x47	; 71
+ 17c:	f3 e0       	ldi	r31, 0x03	; 3
+ 17e:	31 97       	sbiw	r30, 0x01	; 1
+ 180:	f1 f7       	brne	.-4      	; 0x17e <resetDS18B20()+0x1e>
+ 182:	00 c0       	rjmp	.+0      	; 0x184 <resetDS18B20()+0x24>
+ 184:	00 00       	nop
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:30
+ 186:	81 70       	andi	r24, 0x01	; 1
+ 188:	08 95       	ret
+
+0000018a <readBitDS18B20()>:
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:58
+ 18a:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:59
+ 18c:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 18e:	82 e0       	ldi	r24, 0x02	; 2
+ 190:	8a 95       	dec	r24
+ 192:	f1 f7       	brne	.-4      	; 0x190 <readBitDS18B20()+0x6>
+ 194:	00 c0       	rjmp	.+0      	; 0x196 <readBitDS18B20()+0xc>
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:63
+ 196:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 198:	95 e2       	ldi	r25, 0x25	; 37
+ 19a:	9a 95       	dec	r25
+ 19c:	f1 f7       	brne	.-4      	; 0x19a <readBitDS18B20()+0x10>
+ 19e:	00 00       	nop
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:67
+ 1a0:	80 b3       	in	r24, 0x10	; 16
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 1a2:	98 e7       	ldi	r25, 0x78	; 120
+ 1a4:	9a 95       	dec	r25
+ 1a6:	f1 f7       	brne	.-4      	; 0x1a4 <readBitDS18B20()+0x1a>
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:74
+ 1a8:	81 70       	andi	r24, 0x01	; 1
+ 1aa:	08 95       	ret
+
+000001ac <writeByteDS18B20(unsigned char)>:
+_Z16writeByteDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:79
+ 1ac:	99 e0       	ldi	r25, 0x09	; 9
+ 1ae:	91 50       	subi	r25, 0x01	; 1
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:81
+ 1b0:	71 f0       	breq	.+28     	; 0x1ce <writeByteDS18B20(unsigned char)+0x22>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:37
+ 1b2:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:38
+ 1b4:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 1b6:	22 e0       	ldi	r18, 0x02	; 2
+ 1b8:	2a 95       	dec	r18
+ 1ba:	f1 f7       	brne	.-4      	; 0x1b8 <writeByteDS18B20(unsigned char)+0xc>
+ 1bc:	00 c0       	rjmp	.+0      	; 0x1be <writeByteDS18B20(unsigned char)+0x12>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:42
+ 1be:	80 fd       	sbrc	r24, 0
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:43
+ 1c0:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 1c2:	20 ea       	ldi	r18, 0xA0	; 160
+ 1c4:	2a 95       	dec	r18
+ 1c6:	f1 f7       	brne	.-4      	; 0x1c4 <writeByteDS18B20(unsigned char)+0x18>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:48
+ 1c8:	88 98       	cbi	0x11, 0	; 17
+_Z16writeByteDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:83
+ 1ca:	86 95       	lsr	r24
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:81
+ 1cc:	f0 cf       	rjmp	.-32     	; 0x1ae <writeByteDS18B20(unsigned char)+0x2>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:85
+ 1ce:	08 95       	ret
+
+000001d0 <readByteDS18B20()>:
+_Z15readByteDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:90
+ 1d0:	cf 93       	push	r28
+ 1d2:	df 93       	push	r29
+ 1d4:	d9 e0       	ldi	r29, 0x09	; 9
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:91
+ 1d6:	c0 e0       	ldi	r28, 0x00	; 0
+ 1d8:	d1 50       	subi	r29, 0x01	; 1
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:92
+ 1da:	39 f0       	breq	.+14     	; 0x1ea <readByteDS18B20()+0x1a>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:94
+ 1dc:	d6 df       	rcall	.-84     	; 0x18a <readBitDS18B20()>
+ 1de:	87 95       	ror	r24
+ 1e0:	88 27       	eor	r24, r24
+ 1e2:	87 95       	ror	r24
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:93
+ 1e4:	c6 95       	lsr	r28
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:94
+ 1e6:	c8 2b       	or	r28, r24
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:92
+ 1e8:	f7 cf       	rjmp	.-18     	; 0x1d8 <readByteDS18B20()+0x8>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:97
+ 1ea:	8c 2f       	mov	r24, r28
+ 1ec:	df 91       	pop	r29
+ 1ee:	cf 91       	pop	r28
+ 1f0:	08 95       	ret
+
+000001f2 <getTempDS18B20()>:
+_Z14getTempDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:102
+ 1f2:	cf 93       	push	r28
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:108
+ 1f4:	f8 94       	cli
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:111
+ 1f6:	b4 df       	rcall	.-152    	; 0x160 <resetDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:112
+ 1f8:	8c ec       	ldi	r24, 0xCC	; 204
+ 1fa:	d8 df       	rcall	.-80     	; 0x1ac <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:113
+ 1fc:	84 e4       	ldi	r24, 0x44	; 68
+ 1fe:	d6 df       	rcall	.-84     	; 0x1ac <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:115
+ 200:	c4 df       	rcall	.-120    	; 0x18a <readBitDS18B20()>
+ 202:	88 23       	and	r24, r24
+ 204:	e9 f3       	breq	.-6      	; 0x200 <getTempDS18B20()+0xe>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:117
+ 206:	ac df       	rcall	.-168    	; 0x160 <resetDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:118
+ 208:	8c ec       	ldi	r24, 0xCC	; 204
+ 20a:	d0 df       	rcall	.-96     	; 0x1ac <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:119
+ 20c:	8e eb       	ldi	r24, 0xBE	; 190
+ 20e:	ce df       	rcall	.-100    	; 0x1ac <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:122
+ 210:	df df       	rcall	.-66     	; 0x1d0 <readByteDS18B20()>
+ 212:	c8 2f       	mov	r28, r24
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:123
+ 214:	dd df       	rcall	.-70     	; 0x1d0 <readByteDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:126
+ 216:	78 94       	sei
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:130
+ 218:	68 2f       	mov	r22, r24
+ 21a:	70 e0       	ldi	r23, 0x00	; 0
+ 21c:	76 2f       	mov	r23, r22
+ 21e:	66 27       	eor	r22, r22
+ 220:	6c 0f       	add	r22, r28
+ 222:	71 1d       	adc	r23, r1
+ 224:	07 2e       	mov	r0, r23
+ 226:	00 0c       	add	r0, r0
+ 228:	88 0b       	sbc	r24, r24
+ 22a:	99 0b       	sbc	r25, r25
+ 22c:	ea d0       	rcall	.+468    	; 0x402 <__floatsisf>
+ 22e:	20 e0       	ldi	r18, 0x00	; 0
+ 230:	30 e0       	ldi	r19, 0x00	; 0
+ 232:	40 e8       	ldi	r20, 0x80	; 128
+ 234:	5d e3       	ldi	r21, 0x3D	; 61
+ 236:	49 d1       	rcall	.+658    	; 0x4ca <__mulsf3>
+C:\Users\rOnan\Documents\Arduino\2313test/ds18b20.cpp:133
+ 238:	cf 91       	pop	r28
+ 23a:	08 95       	ret
+
+0000023c <main>:
+main():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+	#ifdef TUNED_OSCCAL_VALUE
+	OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 23c:	81 b7       	in	r24, 0x31	; 49
+ 23e:	81 bf       	out	0x31, r24	; 49
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:8
+    #endif
+    init();
+ 240:	9e d0       	rcall	.+316    	; 0x37e <init>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:10
+
+	setup();
+ 242:	0b df       	rcall	.-490    	; 0x5a <setup>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:13 (discriminator 1)
+    
+	for (;;)
+		loop();
+ 244:	0f df       	rcall	.-482    	; 0x64 <loop>
+ 246:	fe cf       	rjmp	.-4      	; 0x244 <main+0x8>
+
+00000248 <__vector_6>:
+__vector_6():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:592
+#endif
+  #if INITIALIZE_SECONDARY_TIMERS
+  // Prepare the timer for PWM
+    initToneTimerInternal();
+  #endif
+}
+ 248:	1f 92       	push	r1
+ 24a:	0f 92       	push	r0
+ 24c:	0f b6       	in	r0, 0x3f	; 63
+ 24e:	0f 92       	push	r0
+ 250:	11 24       	eor	r1, r1
+ 252:	2f 93       	push	r18
+ 254:	3f 93       	push	r19
+ 256:	8f 93       	push	r24
+ 258:	9f 93       	push	r25
+ 25a:	af 93       	push	r26
+ 25c:	bf 93       	push	r27
+ 25e:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <millis_timer_millis>
+ 262:	90 91 6c 00 	lds	r25, 0x006C	; 0x80006c <millis_timer_millis+0x1>
+ 266:	a0 91 6d 00 	lds	r26, 0x006D	; 0x80006d <millis_timer_millis+0x2>
+ 26a:	b0 91 6e 00 	lds	r27, 0x006E	; 0x80006e <millis_timer_millis+0x3>
+ 26e:	30 91 6a 00 	lds	r19, 0x006A	; 0x80006a <__data_end>
+ 272:	26 e0       	ldi	r18, 0x06	; 6
+ 274:	23 0f       	add	r18, r19
+ 276:	2d 37       	cpi	r18, 0x7D	; 125
+ 278:	68 f1       	brcs	.+90     	; 0x2d4 <__vector_6+0x8c>
+ 27a:	29 e8       	ldi	r18, 0x89	; 137
+ 27c:	23 0f       	add	r18, r19
+ 27e:	03 96       	adiw	r24, 0x03	; 3
+ 280:	a1 1d       	adc	r26, r1
+ 282:	b1 1d       	adc	r27, r1
+ 284:	20 93 6a 00 	sts	0x006A, r18	; 0x80006a <__data_end>
+ 288:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <millis_timer_millis>
+ 28c:	90 93 6c 00 	sts	0x006C, r25	; 0x80006c <millis_timer_millis+0x1>
+ 290:	a0 93 6d 00 	sts	0x006D, r26	; 0x80006d <millis_timer_millis+0x2>
+ 294:	b0 93 6e 00 	sts	0x006E, r27	; 0x80006e <millis_timer_millis+0x3>
+ 298:	80 91 6f 00 	lds	r24, 0x006F	; 0x80006f <millis_timer_overflow_count>
+ 29c:	90 91 70 00 	lds	r25, 0x0070	; 0x800070 <millis_timer_overflow_count+0x1>
+ 2a0:	a0 91 71 00 	lds	r26, 0x0071	; 0x800071 <millis_timer_overflow_count+0x2>
+ 2a4:	b0 91 72 00 	lds	r27, 0x0072	; 0x800072 <millis_timer_overflow_count+0x3>
+ 2a8:	01 96       	adiw	r24, 0x01	; 1
+ 2aa:	a1 1d       	adc	r26, r1
+ 2ac:	b1 1d       	adc	r27, r1
+ 2ae:	80 93 6f 00 	sts	0x006F, r24	; 0x80006f <millis_timer_overflow_count>
+ 2b2:	90 93 70 00 	sts	0x0070, r25	; 0x800070 <millis_timer_overflow_count+0x1>
+ 2b6:	a0 93 71 00 	sts	0x0071, r26	; 0x800071 <millis_timer_overflow_count+0x2>
+ 2ba:	b0 93 72 00 	sts	0x0072, r27	; 0x800072 <millis_timer_overflow_count+0x3>
+ 2be:	bf 91       	pop	r27
+ 2c0:	af 91       	pop	r26
+ 2c2:	9f 91       	pop	r25
+ 2c4:	8f 91       	pop	r24
+ 2c6:	3f 91       	pop	r19
+ 2c8:	2f 91       	pop	r18
+ 2ca:	0f 90       	pop	r0
+ 2cc:	0f be       	out	0x3f, r0	; 63
+ 2ce:	0f 90       	pop	r0
+ 2d0:	1f 90       	pop	r1
+ 2d2:	18 95       	reti
+ 2d4:	02 96       	adiw	r24, 0x02	; 2
+ 2d6:	a1 1d       	adc	r26, r1
+ 2d8:	b1 1d       	adc	r27, r1
+ 2da:	d4 cf       	rjmp	.-88     	; 0x284 <__vector_6+0x3c>
+
+000002dc <micros>:
+micros():
+ 2dc:	3f b7       	in	r19, 0x3f	; 63
+ 2de:	f8 94       	cli
+ 2e0:	80 91 6f 00 	lds	r24, 0x006F	; 0x80006f <millis_timer_overflow_count>
+ 2e4:	90 91 70 00 	lds	r25, 0x0070	; 0x800070 <millis_timer_overflow_count+0x1>
+ 2e8:	a0 91 71 00 	lds	r26, 0x0071	; 0x800071 <millis_timer_overflow_count+0x2>
+ 2ec:	b0 91 72 00 	lds	r27, 0x0072	; 0x800072 <millis_timer_overflow_count+0x3>
+ 2f0:	22 b7       	in	r18, 0x32	; 50
+ 2f2:	08 b6       	in	r0, 0x38	; 56
+ 2f4:	01 fe       	sbrs	r0, 1
+ 2f6:	05 c0       	rjmp	.+10     	; 0x302 <micros+0x26>
+ 2f8:	2f 3f       	cpi	r18, 0xFF	; 255
+ 2fa:	19 f0       	breq	.+6      	; 0x302 <micros+0x26>
+ 2fc:	01 96       	adiw	r24, 0x01	; 1
+ 2fe:	a1 1d       	adc	r26, r1
+ 300:	b1 1d       	adc	r27, r1
+ 302:	3f bf       	out	0x3f, r19	; 63
+ 304:	ba 2f       	mov	r27, r26
+ 306:	a9 2f       	mov	r26, r25
+ 308:	98 2f       	mov	r25, r24
+ 30a:	88 27       	eor	r24, r24
+ 30c:	bc 01       	movw	r22, r24
+ 30e:	cd 01       	movw	r24, r26
+ 310:	62 0f       	add	r22, r18
+ 312:	71 1d       	adc	r23, r1
+ 314:	81 1d       	adc	r24, r1
+ 316:	91 1d       	adc	r25, r1
+ 318:	43 e0       	ldi	r20, 0x03	; 3
+ 31a:	66 0f       	add	r22, r22
+ 31c:	77 1f       	adc	r23, r23
+ 31e:	88 1f       	adc	r24, r24
+ 320:	99 1f       	adc	r25, r25
+ 322:	4a 95       	dec	r20
+ 324:	d1 f7       	brne	.-12     	; 0x31a <micros+0x3e>
+ 326:	08 95       	ret
+
+00000328 <yield>:
+__empty():
+ 328:	08 95       	ret
+
+0000032a <delay>:
+delay():
+ 32a:	cf 92       	push	r12
+ 32c:	df 92       	push	r13
+ 32e:	ef 92       	push	r14
+ 330:	ff 92       	push	r15
+ 332:	cf 93       	push	r28
+ 334:	df 93       	push	r29
+ 336:	6b 01       	movw	r12, r22
+ 338:	7c 01       	movw	r14, r24
+ 33a:	d0 df       	rcall	.-96     	; 0x2dc <micros>
+ 33c:	eb 01       	movw	r28, r22
+ 33e:	c1 14       	cp	r12, r1
+ 340:	d1 04       	cpc	r13, r1
+ 342:	e1 04       	cpc	r14, r1
+ 344:	f1 04       	cpc	r15, r1
+ 346:	61 f0       	breq	.+24     	; 0x360 <delay+0x36>
+ 348:	ef df       	rcall	.-34     	; 0x328 <yield>
+ 34a:	c8 df       	rcall	.-112    	; 0x2dc <micros>
+ 34c:	6c 1b       	sub	r22, r28
+ 34e:	7d 0b       	sbc	r23, r29
+ 350:	68 3e       	cpi	r22, 0xE8	; 232
+ 352:	73 40       	sbci	r23, 0x03	; 3
+ 354:	a0 f3       	brcs	.-24     	; 0x33e <delay+0x14>
+ 356:	c1 14       	cp	r12, r1
+ 358:	d1 04       	cpc	r13, r1
+ 35a:	e1 04       	cpc	r14, r1
+ 35c:	f1 04       	cpc	r15, r1
+ 35e:	39 f4       	brne	.+14     	; 0x36e <delay+0x44>
+ 360:	df 91       	pop	r29
+ 362:	cf 91       	pop	r28
+ 364:	ff 90       	pop	r15
+ 366:	ef 90       	pop	r14
+ 368:	df 90       	pop	r13
+ 36a:	cf 90       	pop	r12
+ 36c:	08 95       	ret
+ 36e:	81 e0       	ldi	r24, 0x01	; 1
+ 370:	c8 1a       	sub	r12, r24
+ 372:	d1 08       	sbc	r13, r1
+ 374:	e1 08       	sbc	r14, r1
+ 376:	f1 08       	sbc	r15, r1
+ 378:	c8 51       	subi	r28, 0x18	; 24
+ 37a:	dc 4f       	sbci	r29, 0xFC	; 252
+ 37c:	e6 cf       	rjmp	.-52     	; 0x34a <delay+0x20>
+
+0000037e <init>:
+init():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:753
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 37e:	80 b7       	in	r24, 0x30	; 48
+ 380:	82 60       	ori	r24, 0x02	; 2
+ 382:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:754
+  sbi(TCCR0A, WGM00);
+ 384:	80 b7       	in	r24, 0x30	; 48
+ 386:	81 60       	ori	r24, 0x01	; 1
+ 388:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:777
+  #endif
+  
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 38a:	83 b7       	in	r24, 0x33	; 51
+ 38c:	88 7f       	andi	r24, 0xF8	; 248
+ 38e:	83 60       	ori	r24, 0x03	; 3
+ 390:	83 bf       	out	0x33, r24	; 51
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:789
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 392:	78 94       	sei
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:793
+  
+  // Enable the overlow interrupt (this is the basic system tic-toc for millis)
+  #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  sbi(TIMSK, TOIE0);
+ 394:	89 b7       	in	r24, 0x39	; 57
+ 396:	82 60       	ori	r24, 0x02	; 2
+ 398:	89 bf       	out	0x39, r24	; 57
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:818
+	ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+    // enable a2d conversions
+    sbi(ADCSRA, ADEN);
+  #endif
+  #endif
+}
+ 39a:	08 95       	ret
+
+0000039c <__fixsfsi>:
+__fixsfsi():
+ 39c:	04 d0       	rcall	.+8      	; 0x3a6 <__fixunssfsi>
+ 39e:	68 94       	set
+ 3a0:	b1 11       	cpse	r27, r1
+ 3a2:	8d c0       	rjmp	.+282    	; 0x4be <__fp_szero>
+ 3a4:	08 95       	ret
+
+000003a6 <__fixunssfsi>:
+__fixunssfsi():
+ 3a6:	70 d0       	rcall	.+224    	; 0x488 <__fp_splitA>
+ 3a8:	88 f0       	brcs	.+34     	; 0x3cc <__fixunssfsi+0x26>
+ 3aa:	9f 57       	subi	r25, 0x7F	; 127
+ 3ac:	90 f0       	brcs	.+36     	; 0x3d2 <__fixunssfsi+0x2c>
+ 3ae:	b9 2f       	mov	r27, r25
+ 3b0:	99 27       	eor	r25, r25
+ 3b2:	b7 51       	subi	r27, 0x17	; 23
+ 3b4:	a0 f0       	brcs	.+40     	; 0x3de <__fixunssfsi+0x38>
+ 3b6:	d1 f0       	breq	.+52     	; 0x3ec <__fixunssfsi+0x46>
+ 3b8:	66 0f       	add	r22, r22
+ 3ba:	77 1f       	adc	r23, r23
+ 3bc:	88 1f       	adc	r24, r24
+ 3be:	99 1f       	adc	r25, r25
+ 3c0:	1a f0       	brmi	.+6      	; 0x3c8 <__fixunssfsi+0x22>
+ 3c2:	ba 95       	dec	r27
+ 3c4:	c9 f7       	brne	.-14     	; 0x3b8 <__fixunssfsi+0x12>
+ 3c6:	12 c0       	rjmp	.+36     	; 0x3ec <__fixunssfsi+0x46>
+ 3c8:	b1 30       	cpi	r27, 0x01	; 1
+ 3ca:	81 f0       	breq	.+32     	; 0x3ec <__fixunssfsi+0x46>
+ 3cc:	77 d0       	rcall	.+238    	; 0x4bc <__fp_zero>
+ 3ce:	b1 e0       	ldi	r27, 0x01	; 1
+ 3d0:	08 95       	ret
+ 3d2:	74 c0       	rjmp	.+232    	; 0x4bc <__fp_zero>
+ 3d4:	67 2f       	mov	r22, r23
+ 3d6:	78 2f       	mov	r23, r24
+ 3d8:	88 27       	eor	r24, r24
+ 3da:	b8 5f       	subi	r27, 0xF8	; 248
+ 3dc:	39 f0       	breq	.+14     	; 0x3ec <__fixunssfsi+0x46>
+ 3de:	b9 3f       	cpi	r27, 0xF9	; 249
+ 3e0:	cc f3       	brlt	.-14     	; 0x3d4 <__fixunssfsi+0x2e>
+ 3e2:	86 95       	lsr	r24
+ 3e4:	77 95       	ror	r23
+ 3e6:	67 95       	ror	r22
+ 3e8:	b3 95       	inc	r27
+ 3ea:	d9 f7       	brne	.-10     	; 0x3e2 <__fixunssfsi+0x3c>
+ 3ec:	3e f4       	brtc	.+14     	; 0x3fc <__fixunssfsi+0x56>
+ 3ee:	90 95       	com	r25
+ 3f0:	80 95       	com	r24
+ 3f2:	70 95       	com	r23
+ 3f4:	61 95       	neg	r22
+ 3f6:	7f 4f       	sbci	r23, 0xFF	; 255
+ 3f8:	8f 4f       	sbci	r24, 0xFF	; 255
+ 3fa:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3fc:	08 95       	ret
+
+000003fe <__floatunsisf>:
+__floatunsisf():
+ 3fe:	e8 94       	clt
+ 400:	09 c0       	rjmp	.+18     	; 0x414 <__floatsisf+0x12>
+
+00000402 <__floatsisf>:
+ 402:	97 fb       	bst	r25, 7
+ 404:	3e f4       	brtc	.+14     	; 0x414 <__floatsisf+0x12>
+ 406:	90 95       	com	r25
+ 408:	80 95       	com	r24
+ 40a:	70 95       	com	r23
+ 40c:	61 95       	neg	r22
+ 40e:	7f 4f       	sbci	r23, 0xFF	; 255
+ 410:	8f 4f       	sbci	r24, 0xFF	; 255
+ 412:	9f 4f       	sbci	r25, 0xFF	; 255
+ 414:	99 23       	and	r25, r25
+ 416:	a9 f0       	breq	.+42     	; 0x442 <__floatsisf+0x40>
+ 418:	f9 2f       	mov	r31, r25
+ 41a:	96 e9       	ldi	r25, 0x96	; 150
+ 41c:	bb 27       	eor	r27, r27
+ 41e:	93 95       	inc	r25
+ 420:	f6 95       	lsr	r31
+ 422:	87 95       	ror	r24
+ 424:	77 95       	ror	r23
+ 426:	67 95       	ror	r22
+ 428:	b7 95       	ror	r27
+ 42a:	f1 11       	cpse	r31, r1
+ 42c:	f8 cf       	rjmp	.-16     	; 0x41e <__floatsisf+0x1c>
+ 42e:	fa f4       	brpl	.+62     	; 0x46e <__floatsisf+0x6c>
+ 430:	bb 0f       	add	r27, r27
+ 432:	11 f4       	brne	.+4      	; 0x438 <__floatsisf+0x36>
+ 434:	60 ff       	sbrs	r22, 0
+ 436:	1b c0       	rjmp	.+54     	; 0x46e <__floatsisf+0x6c>
+ 438:	6f 5f       	subi	r22, 0xFF	; 255
+ 43a:	7f 4f       	sbci	r23, 0xFF	; 255
+ 43c:	8f 4f       	sbci	r24, 0xFF	; 255
+ 43e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 440:	16 c0       	rjmp	.+44     	; 0x46e <__floatsisf+0x6c>
+ 442:	88 23       	and	r24, r24
+ 444:	11 f0       	breq	.+4      	; 0x44a <__floatsisf+0x48>
+ 446:	96 e9       	ldi	r25, 0x96	; 150
+ 448:	11 c0       	rjmp	.+34     	; 0x46c <__floatsisf+0x6a>
+ 44a:	77 23       	and	r23, r23
+ 44c:	21 f0       	breq	.+8      	; 0x456 <__floatsisf+0x54>
+ 44e:	9e e8       	ldi	r25, 0x8E	; 142
+ 450:	87 2f       	mov	r24, r23
+ 452:	76 2f       	mov	r23, r22
+ 454:	05 c0       	rjmp	.+10     	; 0x460 <__floatsisf+0x5e>
+ 456:	66 23       	and	r22, r22
+ 458:	71 f0       	breq	.+28     	; 0x476 <__floatsisf+0x74>
+ 45a:	96 e8       	ldi	r25, 0x86	; 134
+ 45c:	86 2f       	mov	r24, r22
+ 45e:	70 e0       	ldi	r23, 0x00	; 0
+ 460:	60 e0       	ldi	r22, 0x00	; 0
+ 462:	2a f0       	brmi	.+10     	; 0x46e <__floatsisf+0x6c>
+ 464:	9a 95       	dec	r25
+ 466:	66 0f       	add	r22, r22
+ 468:	77 1f       	adc	r23, r23
+ 46a:	88 1f       	adc	r24, r24
+ 46c:	da f7       	brpl	.-10     	; 0x464 <__floatsisf+0x62>
+ 46e:	88 0f       	add	r24, r24
+ 470:	96 95       	lsr	r25
+ 472:	87 95       	ror	r24
+ 474:	97 f9       	bld	r25, 7
+ 476:	08 95       	ret
+
+00000478 <__fp_split3>:
+__fp_split3():
+ 478:	57 fd       	sbrc	r21, 7
+ 47a:	90 58       	subi	r25, 0x80	; 128
+ 47c:	44 0f       	add	r20, r20
+ 47e:	55 1f       	adc	r21, r21
+ 480:	59 f0       	breq	.+22     	; 0x498 <__fp_splitA+0x10>
+ 482:	5f 3f       	cpi	r21, 0xFF	; 255
+ 484:	71 f0       	breq	.+28     	; 0x4a2 <__fp_splitA+0x1a>
+ 486:	47 95       	ror	r20
+
+00000488 <__fp_splitA>:
+ 488:	88 0f       	add	r24, r24
+ 48a:	97 fb       	bst	r25, 7
+ 48c:	99 1f       	adc	r25, r25
+ 48e:	61 f0       	breq	.+24     	; 0x4a8 <__fp_splitA+0x20>
+ 490:	9f 3f       	cpi	r25, 0xFF	; 255
+ 492:	79 f0       	breq	.+30     	; 0x4b2 <__fp_splitA+0x2a>
+ 494:	87 95       	ror	r24
+ 496:	08 95       	ret
+ 498:	12 16       	cp	r1, r18
+ 49a:	13 06       	cpc	r1, r19
+ 49c:	14 06       	cpc	r1, r20
+ 49e:	55 1f       	adc	r21, r21
+ 4a0:	f2 cf       	rjmp	.-28     	; 0x486 <__fp_split3+0xe>
+ 4a2:	46 95       	lsr	r20
+ 4a4:	f1 df       	rcall	.-30     	; 0x488 <__fp_splitA>
+ 4a6:	08 c0       	rjmp	.+16     	; 0x4b8 <__fp_splitA+0x30>
+ 4a8:	16 16       	cp	r1, r22
+ 4aa:	17 06       	cpc	r1, r23
+ 4ac:	18 06       	cpc	r1, r24
+ 4ae:	99 1f       	adc	r25, r25
+ 4b0:	f1 cf       	rjmp	.-30     	; 0x494 <__fp_splitA+0xc>
+ 4b2:	86 95       	lsr	r24
+ 4b4:	71 05       	cpc	r23, r1
+ 4b6:	61 05       	cpc	r22, r1
+ 4b8:	08 94       	sec
+ 4ba:	08 95       	ret
+
+000004bc <__fp_zero>:
+__fp_zero():
+ 4bc:	e8 94       	clt
+
+000004be <__fp_szero>:
+ 4be:	bb 27       	eor	r27, r27
+ 4c0:	66 27       	eor	r22, r22
+ 4c2:	77 27       	eor	r23, r23
+ 4c4:	cb 01       	movw	r24, r22
+ 4c6:	97 f9       	bld	r25, 7
+ 4c8:	08 95       	ret
+
+000004ca <__mulsf3>:
+__mulsf3():
+ 4ca:	0a d0       	rcall	.+20     	; 0x4e0 <__mulsf3x>
+ 4cc:	80 c0       	rjmp	.+256    	; 0x5ce <__fp_round>
+ 4ce:	71 d0       	rcall	.+226    	; 0x5b2 <__fp_pscA>
+ 4d0:	28 f0       	brcs	.+10     	; 0x4dc <__mulsf3+0x12>
+ 4d2:	76 d0       	rcall	.+236    	; 0x5c0 <__fp_pscB>
+ 4d4:	18 f0       	brcs	.+6      	; 0x4dc <__mulsf3+0x12>
+ 4d6:	95 23       	and	r25, r21
+ 4d8:	09 f0       	breq	.+2      	; 0x4dc <__mulsf3+0x12>
+ 4da:	62 c0       	rjmp	.+196    	; 0x5a0 <__fp_inf>
+ 4dc:	67 c0       	rjmp	.+206    	; 0x5ac <__fp_nan>
+ 4de:	ef cf       	rjmp	.-34     	; 0x4be <__fp_szero>
+
+000004e0 <__mulsf3x>:
+__mulsf3x():
+ 4e0:	cb df       	rcall	.-106    	; 0x478 <__fp_split3>
+ 4e2:	a8 f3       	brcs	.-22     	; 0x4ce <__mulsf3+0x4>
+
+000004e4 <__mulsf3_pse>:
+ 4e4:	99 23       	and	r25, r25
+ 4e6:	d9 f3       	breq	.-10     	; 0x4de <__mulsf3+0x14>
+ 4e8:	55 23       	and	r21, r21
+ 4ea:	c9 f3       	breq	.-14     	; 0x4de <__mulsf3+0x14>
+ 4ec:	95 0f       	add	r25, r21
+ 4ee:	50 e0       	ldi	r21, 0x00	; 0
+ 4f0:	55 1f       	adc	r21, r21
+ 4f2:	aa 27       	eor	r26, r26
+ 4f4:	ee 27       	eor	r30, r30
+ 4f6:	ff 27       	eor	r31, r31
+ 4f8:	bb 27       	eor	r27, r27
+ 4fa:	00 24       	eor	r0, r0
+ 4fc:	08 94       	sec
+ 4fe:	67 95       	ror	r22
+ 500:	20 f4       	brcc	.+8      	; 0x50a <__mulsf3_pse+0x26>
+ 502:	e2 0f       	add	r30, r18
+ 504:	f3 1f       	adc	r31, r19
+ 506:	b4 1f       	adc	r27, r20
+ 508:	0a 1e       	adc	r0, r26
+ 50a:	22 0f       	add	r18, r18
+ 50c:	33 1f       	adc	r19, r19
+ 50e:	44 1f       	adc	r20, r20
+ 510:	aa 1f       	adc	r26, r26
+ 512:	66 95       	lsr	r22
+ 514:	a9 f7       	brne	.-22     	; 0x500 <__mulsf3_pse+0x1c>
+ 516:	77 95       	ror	r23
+ 518:	30 f4       	brcc	.+12     	; 0x526 <__mulsf3_pse+0x42>
+ 51a:	f3 0f       	add	r31, r19
+ 51c:	b4 1f       	adc	r27, r20
+ 51e:	0a 1e       	adc	r0, r26
+ 520:	12 1e       	adc	r1, r18
+ 522:	08 f4       	brcc	.+2      	; 0x526 <__mulsf3_pse+0x42>
+ 524:	63 95       	inc	r22
+ 526:	33 0f       	add	r19, r19
+ 528:	44 1f       	adc	r20, r20
+ 52a:	aa 1f       	adc	r26, r26
+ 52c:	22 1f       	adc	r18, r18
+ 52e:	76 95       	lsr	r23
+ 530:	99 f7       	brne	.-26     	; 0x518 <__mulsf3_pse+0x34>
+ 532:	87 95       	ror	r24
+ 534:	20 f4       	brcc	.+8      	; 0x53e <__mulsf3_pse+0x5a>
+ 536:	b4 0f       	add	r27, r20
+ 538:	0a 1e       	adc	r0, r26
+ 53a:	12 1e       	adc	r1, r18
+ 53c:	63 1f       	adc	r22, r19
+ 53e:	44 0f       	add	r20, r20
+ 540:	aa 1f       	adc	r26, r26
+ 542:	22 1f       	adc	r18, r18
+ 544:	33 1f       	adc	r19, r19
+ 546:	86 95       	lsr	r24
+ 548:	a9 f7       	brne	.-22     	; 0x534 <__mulsf3_pse+0x50>
+ 54a:	86 2f       	mov	r24, r22
+ 54c:	71 2d       	mov	r23, r1
+ 54e:	60 2d       	mov	r22, r0
+ 550:	11 24       	eor	r1, r1
+ 552:	9f 57       	subi	r25, 0x7F	; 127
+ 554:	50 40       	sbci	r21, 0x00	; 0
+ 556:	8a f0       	brmi	.+34     	; 0x57a <__mulsf3_pse+0x96>
+ 558:	e1 f0       	breq	.+56     	; 0x592 <__mulsf3_pse+0xae>
+ 55a:	88 23       	and	r24, r24
+ 55c:	4a f0       	brmi	.+18     	; 0x570 <__mulsf3_pse+0x8c>
+ 55e:	ee 0f       	add	r30, r30
+ 560:	ff 1f       	adc	r31, r31
+ 562:	bb 1f       	adc	r27, r27
+ 564:	66 1f       	adc	r22, r22
+ 566:	77 1f       	adc	r23, r23
+ 568:	88 1f       	adc	r24, r24
+ 56a:	91 50       	subi	r25, 0x01	; 1
+ 56c:	50 40       	sbci	r21, 0x00	; 0
+ 56e:	a9 f7       	brne	.-22     	; 0x55a <__mulsf3_pse+0x76>
+ 570:	9e 3f       	cpi	r25, 0xFE	; 254
+ 572:	51 05       	cpc	r21, r1
+ 574:	70 f0       	brcs	.+28     	; 0x592 <__mulsf3_pse+0xae>
+ 576:	14 c0       	rjmp	.+40     	; 0x5a0 <__fp_inf>
+ 578:	a2 cf       	rjmp	.-188    	; 0x4be <__fp_szero>
+ 57a:	5f 3f       	cpi	r21, 0xFF	; 255
+ 57c:	ec f3       	brlt	.-6      	; 0x578 <__mulsf3_pse+0x94>
+ 57e:	98 3e       	cpi	r25, 0xE8	; 232
+ 580:	dc f3       	brlt	.-10     	; 0x578 <__mulsf3_pse+0x94>
+ 582:	86 95       	lsr	r24
+ 584:	77 95       	ror	r23
+ 586:	67 95       	ror	r22
+ 588:	b7 95       	ror	r27
+ 58a:	f7 95       	ror	r31
+ 58c:	e7 95       	ror	r30
+ 58e:	9f 5f       	subi	r25, 0xFF	; 255
+ 590:	c1 f7       	brne	.-16     	; 0x582 <__mulsf3_pse+0x9e>
+ 592:	fe 2b       	or	r31, r30
+ 594:	88 0f       	add	r24, r24
+ 596:	91 1d       	adc	r25, r1
+ 598:	96 95       	lsr	r25
+ 59a:	87 95       	ror	r24
+ 59c:	97 f9       	bld	r25, 7
+ 59e:	08 95       	ret
+
+000005a0 <__fp_inf>:
+ 5a0:	97 f9       	bld	r25, 7
+ 5a2:	9f 67       	ori	r25, 0x7F	; 127
+ 5a4:	80 e8       	ldi	r24, 0x80	; 128
+ 5a6:	70 e0       	ldi	r23, 0x00	; 0
+ 5a8:	60 e0       	ldi	r22, 0x00	; 0
+ 5aa:	08 95       	ret
+
+000005ac <__fp_nan>:
+ 5ac:	9f ef       	ldi	r25, 0xFF	; 255
+ 5ae:	80 ec       	ldi	r24, 0xC0	; 192
+ 5b0:	08 95       	ret
+
+000005b2 <__fp_pscA>:
+__fp_pscA():
+ 5b2:	00 24       	eor	r0, r0
+ 5b4:	0a 94       	dec	r0
+ 5b6:	16 16       	cp	r1, r22
+ 5b8:	17 06       	cpc	r1, r23
+ 5ba:	18 06       	cpc	r1, r24
+ 5bc:	09 06       	cpc	r0, r25
+ 5be:	08 95       	ret
+
+000005c0 <__fp_pscB>:
+__fp_pscB():
+ 5c0:	00 24       	eor	r0, r0
+ 5c2:	0a 94       	dec	r0
+ 5c4:	12 16       	cp	r1, r18
+ 5c6:	13 06       	cpc	r1, r19
+ 5c8:	14 06       	cpc	r1, r20
+ 5ca:	05 06       	cpc	r0, r21
+ 5cc:	08 95       	ret
+
+000005ce <__fp_round>:
+__fp_round():
+ 5ce:	09 2e       	mov	r0, r25
+ 5d0:	03 94       	inc	r0
+ 5d2:	00 0c       	add	r0, r0
+ 5d4:	11 f4       	brne	.+4      	; 0x5da <__fp_round+0xc>
+ 5d6:	88 23       	and	r24, r24
+ 5d8:	52 f0       	brmi	.+20     	; 0x5ee <__fp_round+0x20>
+ 5da:	bb 0f       	add	r27, r27
+ 5dc:	40 f4       	brcc	.+16     	; 0x5ee <__fp_round+0x20>
+ 5de:	bf 2b       	or	r27, r31
+ 5e0:	11 f4       	brne	.+4      	; 0x5e6 <__fp_round+0x18>
+ 5e2:	60 ff       	sbrs	r22, 0
+ 5e4:	04 c0       	rjmp	.+8      	; 0x5ee <__fp_round+0x20>
+ 5e6:	6f 5f       	subi	r22, 0xFF	; 255
+ 5e8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5ea:	8f 4f       	sbci	r24, 0xFF	; 255
+ 5ec:	9f 4f       	sbci	r25, 0xFF	; 255
+ 5ee:	08 95       	ret
+
+000005f0 <__divmodsi4>:
+__divmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1686
+ 5f0:	05 2e       	mov	r0, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1687
+ 5f2:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1688
+ 5f4:	16 f4       	brtc	.+4      	; 0x5fa <__divmodsi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1689
+ 5f6:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1690
+ 5f8:	0f d0       	rcall	.+30     	; 0x618 <__negsi2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1692
+ 5fa:	57 fd       	sbrc	r21, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1693
+ 5fc:	05 d0       	rcall	.+10     	; 0x608 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1694
+ 5fe:	14 d0       	rcall	.+40     	; 0x628 <__udivmodsi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1695
+ 600:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1696
+ 602:	02 d0       	rcall	.+4      	; 0x608 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1697
+ 604:	46 f4       	brtc	.+16     	; 0x616 <__divmodsi4_exit>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1698
+ 606:	08 c0       	rjmp	.+16     	; 0x618 <__negsi2>
+
+00000608 <__divmodsi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1701
+ 608:	50 95       	com	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1702
+ 60a:	40 95       	com	r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1703
+ 60c:	30 95       	com	r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1704
+ 60e:	21 95       	neg	r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1705
+ 610:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1706
+ 612:	4f 4f       	sbci	r20, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1707
+ 614:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000616 <__divmodsi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1709
+ 616:	08 95       	ret
+
+00000618 <__negsi2>:
+__negsi2():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1718
+ 618:	90 95       	com	r25
+ 61a:	80 95       	com	r24
+ 61c:	70 95       	com	r23
+ 61e:	61 95       	neg	r22
+ 620:	7f 4f       	sbci	r23, 0xFF	; 255
+ 622:	8f 4f       	sbci	r24, 0xFF	; 255
+ 624:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1719
+ 626:	08 95       	ret
+
+00000628 <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ 628:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ 62a:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ 62c:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ 62e:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ 630:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ 632:	0d c0       	rjmp	.+26     	; 0x64e <__udivmodsi4_ep>
+
+00000634 <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ 634:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ 636:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ 638:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ 63a:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ 63c:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ 63e:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ 640:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ 642:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ 644:	20 f0       	brcs	.+8      	; 0x64e <__udivmodsi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ 646:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ 648:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ 64a:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ 64c:	f5 0b       	sbc	r31, r21
+
+0000064e <__udivmodsi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ 64e:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ 650:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ 652:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ 654:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ 656:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ 658:	69 f7       	brne	.-38     	; 0x634 <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ 65a:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ 65c:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ 65e:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ 660:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ 662:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ 664:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ 666:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ 668:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ 66a:	08 95       	ret
+
+0000066c <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 66c:	f8 94       	cli
+
+0000066e <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 66e:	ff cf       	rjmp	.-2      	; 0x66e <__stop_program>

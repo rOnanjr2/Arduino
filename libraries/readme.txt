@@ -1,1 +1,1 @@
-РРЅС„РѕСЂРјР°С†РёСЏ РїРѕ СѓСЃС‚Р°РЅРѕРІРєРµ Р±РёР±Р»РёРѕС‚РµРє: http://www.arduino.cc/en/Guide/Libraries
+Информация по установке библиотек: http://www.arduino.cc/en/Guide/Libraries

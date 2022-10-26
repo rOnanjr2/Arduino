@@ -4,9 +4,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 volatile byte cnt = 0;
-int divIter;
-//int digit3;
-CS1694 CS1694(6,5,4); //data,clock,strobe pins
+CS1694 CS1694(4,3,2); //data,clock,strobe pins
 
 void setup()  {
   CS1694.displaySetup(true); //set to 7x10 mode, set false for 6x11 mode
@@ -31,7 +29,7 @@ void loop(){
 
 ISR(TIMER0_COMPB_vect) {
   digitalWrite(13, 1);
-  if (cnt < 20) {       //31
+  if (cnt < 31) {
     cnt++;
     }else {
       ledIndicate();
@@ -44,29 +42,18 @@ ISR(TIMER0_COMPB_vect) {
 void ledIndicate(){
 
 //  CS1694.dispNum(0,0);
-//  CS1694.dispNum(1,1);
-//  CS1694.dispNum(2,2);
-//  CS1694.dispNum(3,3);
-//  CS1694.dispNum(4,4);
-//  CS1694.dispNum(5,5);
-//  CS1694.dispNum(6,6);
-//  CS1694.dispNum(7,7);
-  ring(CS1694.digit3);
-  CS1694.updateDisplay();
-  CS1694.convertVar(millis()/100);
+  CS1694.dispNum(1,1);
+  CS1694.dispNum(2,2);
+  CS1694.dispNum(3,3);
+  CS1694.dispNum(4,4);
+  CS1694.dispNum(5,5);
+  CS1694.dispNum(6,6);
+  CS1694.dispNum(7,7);
+
   CS1694.updateDisplay();
 }
 
 
-
-void ring(int divider){
-  int i = map(divider, 0, 9, 9, 0);
-  if(divIter < i) {
-    divIter++;
-  }else {
-    CS1694.dispRing();
-    divIter = 0;
-  }}
 
 void test(){
 //  CS1694.dispNum(8,0);

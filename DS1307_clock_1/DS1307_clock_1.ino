@@ -6,7 +6,7 @@
 
 byte cnt = 0;
 
-CS1694 CS1694(15,14,16); //data,clock,strobe pins
+CS1694 CS1694(14,15,16); //data,clock,strobe pins
 RTC_DS1307 rtc;
 
 void setup () {

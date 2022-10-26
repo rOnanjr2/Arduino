@@ -1,0 +1,1731 @@
+
+C:\Users\rOnan\AppData\Local\Temp\arduino-sketch-A574229AD07A2F597632F9265F8255AB/2313test2.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	37 c0       	rjmp	.+110    	; 0x70 <__ctors_end>
+   2:	44 c0       	rjmp	.+136    	; 0x8c <__bad_interrupt>
+   4:	43 c0       	rjmp	.+134    	; 0x8c <__bad_interrupt>
+   6:	42 c0       	rjmp	.+132    	; 0x8c <__bad_interrupt>
+   8:	41 c0       	rjmp	.+130    	; 0x8c <__bad_interrupt>
+   a:	40 c0       	rjmp	.+128    	; 0x8c <__bad_interrupt>
+   c:	cc c0       	rjmp	.+408    	; 0x1a6 <__vector_6>
+   e:	3e c0       	rjmp	.+124    	; 0x8c <__bad_interrupt>
+  10:	3d c0       	rjmp	.+122    	; 0x8c <__bad_interrupt>
+  12:	3c c0       	rjmp	.+120    	; 0x8c <__bad_interrupt>
+  14:	3b c0       	rjmp	.+118    	; 0x8c <__bad_interrupt>
+  16:	3a c0       	rjmp	.+116    	; 0x8c <__bad_interrupt>
+  18:	39 c0       	rjmp	.+114    	; 0x8c <__bad_interrupt>
+  1a:	38 c0       	rjmp	.+112    	; 0x8c <__bad_interrupt>
+  1c:	37 c0       	rjmp	.+110    	; 0x8c <__bad_interrupt>
+  1e:	36 c0       	rjmp	.+108    	; 0x8c <__bad_interrupt>
+  20:	35 c0       	rjmp	.+106    	; 0x8c <__bad_interrupt>
+  22:	34 c0       	rjmp	.+104    	; 0x8c <__bad_interrupt>
+  24:	33 c0       	rjmp	.+102    	; 0x8c <__bad_interrupt>
+
+00000026 <__trampolines_end>:
+__trampolines_start():
+  26:	00 00       	nop
+  28:	00 00       	nop
+  2a:	00 00       	nop
+  2c:	00 02       	muls	r16, r16
+  2e:	00 00       	nop
+  30:	00 01       	movw	r0, r0
+  32:	03 04       	cpc	r0, r3
+  34:	00 00       	nop
+	...
+
+00000038 <digital_pin_to_bit_mask_PGM>:
+  38:	01 02 02 01 04 08 10 20 40 01 02 04 08 10 20 40     ....... @..... @
+  48:	80 04                                               ..
+
+0000004a <digital_pin_to_port_PGM>:
+  4a:	04 04 01 01 04 04 04 04 04 02 02 02 02 02 02 02     ................
+  5a:	02 01                                               ..
+
+0000005c <port_to_output_PGM>:
+  5c:	00 00 3b 00 38 00 00 00 32 00                       ..;.8...2.
+
+00000066 <port_to_mode_PGM>:
+  66:	00 00 3a 00 37 00 00 00 31 00                       ..:.7...1.
+
+00000070 <__ctors_end>:
+__dtors_end():
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ed       	ldi	r28, 0xDF	; 223
+  76:	cd bf       	out	0x3d, r28	; 61
+
+00000078 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  78:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  7a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  7c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  7e:	01 c0       	rjmp	.+2      	; 0x82 <.do_clear_bss_start>
+
+00000080 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  80:	1d 92       	st	X+, r1
+
+00000082 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  82:	a9 36       	cpi	r26, 0x69	; 105
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  84:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  86:	e1 f7       	brne	.-8      	; 0x80 <.do_clear_bss_loop>
+.do_clear_bss_start():
+  88:	88 d0       	rcall	.+272    	; 0x19a <main>
+  8a:	a2 c3       	rjmp	.+1860   	; 0x7d0 <_exit>
+
+0000008c <__bad_interrupt>:
+__vector_1():
+  8c:	b9 cf       	rjmp	.-142    	; 0x0 <__vectors>
+
+0000008e <setup>:
+setup():
+C:\Users\rOnan\Documents\Arduino\2313test2/2313test2.ino:7
+
+
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(7, OUTPUT);
+  8e:	61 e0       	ldi	r22, 0x01	; 1
+  90:	87 e0       	ldi	r24, 0x07	; 7
+  92:	a0 c1       	rjmp	.+832    	; 0x3d4 <pinMode>
+
+00000094 <loop>:
+loop():
+C:\Users\rOnan\Documents\Arduino\2313test2/2313test2.ino:12
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+analogWrite(7, (50 - getTempDS18B20())*10);
+  94:	5d d0       	rcall	.+186    	; 0x150 <getTempDS18B20()>
+  96:	9b 01       	movw	r18, r22
+  98:	ac 01       	movw	r20, r24
+  9a:	60 e0       	ldi	r22, 0x00	; 0
+  9c:	70 e0       	ldi	r23, 0x00	; 0
+  9e:	88 e4       	ldi	r24, 0x48	; 72
+  a0:	92 e4       	ldi	r25, 0x42	; 66
+  a2:	07 d2       	rcall	.+1038   	; 0x4b2 <__subsf3>
+  a4:	20 e0       	ldi	r18, 0x00	; 0
+  a6:	30 e0       	ldi	r19, 0x00	; 0
+  a8:	40 e2       	ldi	r20, 0x20	; 32
+  aa:	51 e4       	ldi	r21, 0x41	; 65
+  ac:	26 d3       	rcall	.+1612   	; 0x6fa <__mulsf3>
+  ae:	66 d2       	rcall	.+1228   	; 0x57c <__fixsfsi>
+  b0:	87 e0       	ldi	r24, 0x07	; 7
+  b2:	23 d1       	rcall	.+582    	; 0x2fa <analogWrite>
+C:\Users\rOnan\Documents\Arduino\2313test2/2313test2.ino:13
+delay(1000);
+  b4:	68 ee       	ldi	r22, 0xE8	; 232
+  b6:	73 e0       	ldi	r23, 0x03	; 3
+  b8:	80 e0       	ldi	r24, 0x00	; 0
+  ba:	90 e0       	ldi	r25, 0x00	; 0
+  bc:	e5 c0       	rjmp	.+458    	; 0x288 <delay>
+
+000000be <resetDS18B20()>:
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:16
+ */
+uint8_t resetDS18B20() {
+  uint8_t i;
+
+  // импульс сброса, минимум 480?s
+  DS18B20_PORT &= ~(1 << DS18B20_DQ);
+  be:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:17
+  DS18B20_DDR |= (1 << DS18B20_DQ); // выход
+  c0:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c2:	8f eb       	ldi	r24, 0xBF	; 191
+  c4:	93 e0       	ldi	r25, 0x03	; 3
+  c6:	01 97       	sbiw	r24, 0x01	; 1
+  c8:	f1 f7       	brne	.-4      	; 0xc6 <resetDS18B20()+0x8>
+  ca:	00 c0       	rjmp	.+0      	; 0xcc <resetDS18B20()+0xe>
+  cc:	00 00       	nop
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:21
+  _delay_us(480);
+
+  // Когда DS18B20 обнаруживает положительный перепад, он ждет от 15?s до 60?s
+  DS18B20_DDR &= ~(1 << DS18B20_DQ); // вход
+  ce:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+  d0:	90 ea       	ldi	r25, 0xA0	; 160
+  d2:	9a 95       	dec	r25
+  d4:	f1 f7       	brne	.-4      	; 0xd2 <resetDS18B20()+0x14>
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:25
+  _delay_us(60);
+
+  // и затем передает импульс присутствия, перемещая шину в логический «0» на длительность от 60?s до 240?s.
+  i = (DS18B20_PIN & (1 << DS18B20_DQ));
+  d6:	80 b3       	in	r24, 0x10	; 16
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+  d8:	e7 e4       	ldi	r30, 0x47	; 71
+  da:	f3 e0       	ldi	r31, 0x03	; 3
+  dc:	31 97       	sbiw	r30, 0x01	; 1
+  de:	f1 f7       	brne	.-4      	; 0xdc <resetDS18B20()+0x1e>
+  e0:	00 c0       	rjmp	.+0      	; 0xe2 <__stack+0x3>
+  e2:	00 00       	nop
+_Z12resetDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:30
+  _delay_us(420);
+
+  //return the read value, 0=ok, 1=error
+  return i;
+}
+  e4:	81 70       	andi	r24, 0x01	; 1
+  e6:	08 95       	ret
+
+000000e8 <readBitDS18B20()>:
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:58
+ */
+uint8_t readBitDS18B20(void) {
+  uint8_t bit = 0;
+
+  // логический «0» на 1?s
+  DS18B20_PORT &= ~(1 << DS18B20_DQ);
+  e8:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:59
+  DS18B20_DDR |= (1 << DS18B20_DQ); // вход
+  ea:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+  ec:	82 e0       	ldi	r24, 0x02	; 2
+  ee:	8a 95       	dec	r24
+  f0:	f1 f7       	brne	.-4      	; 0xee <readBitDS18B20()+0x6>
+  f2:	00 c0       	rjmp	.+0      	; 0xf4 <readBitDS18B20()+0xc>
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:63
+  _delay_us(1);
+
+  // освободить линию и ждать 14?s
+  DS18B20_DDR &= ~(1 << DS18B20_DQ); // вход
+  f4:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+  f6:	95 e2       	ldi	r25, 0x25	; 37
+  f8:	9a 95       	dec	r25
+  fa:	f1 f7       	brne	.-4      	; 0xf8 <readBitDS18B20()+0x10>
+  fc:	00 00       	nop
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:67
+  _delay_us(14);
+
+  // прочитать значение
+  if (DS18B20_PIN & (1 << DS18B20_DQ)) {
+  fe:	80 b3       	in	r24, 0x10	; 16
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 100:	98 e7       	ldi	r25, 0x78	; 120
+ 102:	9a 95       	dec	r25
+ 104:	f1 f7       	brne	.-4      	; 0x102 <readBitDS18B20()+0x1a>
+_Z14readBitDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:74
+  }
+
+  // ждать 45?s и вернуть значение
+  _delay_us(45);
+  return bit;
+}
+ 106:	81 70       	andi	r24, 0x01	; 1
+ 108:	08 95       	ret
+
+0000010a <writeByteDS18B20(unsigned char)>:
+_Z16writeByteDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:79
+
+/*
+ * написать один байт
+ */
+void writeByteDS18B20(uint8_t byte) {
+ 10a:	99 e0       	ldi	r25, 0x09	; 9
+ 10c:	91 50       	subi	r25, 0x01	; 1
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:81
+  uint8_t i = 8;
+  while (i--) {
+ 10e:	71 f0       	breq	.+28     	; 0x12c <writeByteDS18B20(unsigned char)+0x22>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:37
+/*
+ * написать один бит
+ */
+inline void writeBitDS18B20(uint8_t bit) {
+  // логический «0» на 1?s
+  DS18B20_PORT &= ~(1 << DS18B20_DQ);
+ 110:	90 98       	cbi	0x12, 0	; 18
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:38
+  DS18B20_DDR |= (1 << DS18B20_DQ); // выход
+ 112:	88 9a       	sbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 114:	22 e0       	ldi	r18, 0x02	; 2
+ 116:	2a 95       	dec	r18
+ 118:	f1 f7       	brne	.-4      	; 0x116 <writeByteDS18B20(unsigned char)+0xc>
+ 11a:	00 c0       	rjmp	.+0      	; 0x11c <writeByteDS18B20(unsigned char)+0x12>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:42
+  _delay_us(1);
+
+  // если нужно написать 1, нужно освободить линию (если не - держать низкий уровень)
+  if (bit) {
+ 11c:	80 fd       	sbrc	r24, 0
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:43
+    DS18B20_DDR &= ~(1 << DS18B20_DQ); // вход
+ 11e:	88 98       	cbi	0x11, 0	; 17
+_delay_us():
+c:\users\ronan\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+ 120:	20 ea       	ldi	r18, 0xA0	; 160
+ 122:	2a 95       	dec	r18
+ 124:	f1 f7       	brne	.-4      	; 0x122 <writeByteDS18B20(unsigned char)+0x18>
+_Z15writeBitDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:48
+  }
+
+  // ждать 60?s и освободить линию
+  _delay_us(60);
+  DS18B20_DDR &= ~(1 << DS18B20_DQ); // вход
+ 126:	88 98       	cbi	0x11, 0	; 17
+_Z16writeByteDS18B20h():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:83
+ */
+void writeByteDS18B20(uint8_t byte) {
+  uint8_t i = 8;
+  while (i--) {
+    writeBitDS18B20(byte & 1);
+    byte >>= 1;
+ 128:	86 95       	lsr	r24
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:81
+/*
+ * написать один байт
+ */
+void writeByteDS18B20(uint8_t byte) {
+  uint8_t i = 8;
+  while (i--) {
+ 12a:	f0 cf       	rjmp	.-32     	; 0x10c <writeByteDS18B20(unsigned char)+0x2>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:85
+    writeBitDS18B20(byte & 1);
+    byte >>= 1;
+  }
+}
+ 12c:	08 95       	ret
+
+0000012e <readByteDS18B20()>:
+_Z15readByteDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:90
+
+/*
+ * прочитать один байт
+ */
+uint8_t readByteDS18B20(void) {
+ 12e:	cf 93       	push	r28
+ 130:	df 93       	push	r29
+ 132:	d9 e0       	ldi	r29, 0x09	; 9
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:91
+  uint8_t i = 8, n = 0;
+ 134:	c0 e0       	ldi	r28, 0x00	; 0
+ 136:	d1 50       	subi	r29, 0x01	; 1
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:92
+  while (i--) {
+ 138:	39 f0       	breq	.+14     	; 0x148 <readByteDS18B20()+0x1a>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:94
+    n >>= 1;
+    n |= (readBitDS18B20() << 7);
+ 13a:	d6 df       	rcall	.-84     	; 0xe8 <readBitDS18B20()>
+ 13c:	87 95       	ror	r24
+ 13e:	88 27       	eor	r24, r24
+ 140:	87 95       	ror	r24
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:93
+ * прочитать один байт
+ */
+uint8_t readByteDS18B20(void) {
+  uint8_t i = 8, n = 0;
+  while (i--) {
+    n >>= 1;
+ 142:	c6 95       	lsr	r28
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:94
+    n |= (readBitDS18B20() << 7);
+ 144:	c8 2b       	or	r28, r24
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:92
+/*
+ * прочитать один байт
+ */
+uint8_t readByteDS18B20(void) {
+  uint8_t i = 8, n = 0;
+  while (i--) {
+ 146:	f7 cf       	rjmp	.-18     	; 0x136 <readByteDS18B20()+0x8>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:97
+    n >>= 1;
+    n |= (readBitDS18B20() << 7);
+  }
+  return n;
+}
+ 148:	8c 2f       	mov	r24, r28
+ 14a:	df 91       	pop	r29
+ 14c:	cf 91       	pop	r28
+ 14e:	08 95       	ret
+
+00000150 <getTempDS18B20()>:
+_Z14getTempDS18B20v():
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:102
+
+/*
+ * получить температуру
+ */
+double getTempDS18B20() {
+ 150:	cf 93       	push	r28
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:108
+  uint8_t temperatureL;
+  uint8_t temperatureH;
+  double retd = 0;
+
+  if (DS18B20_STOPINTERRUPTONREAD == 1) {
+    cli();
+ 152:	f8 94       	cli
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:111
+  }
+
+  resetDS18B20(); // сброс
+ 154:	b4 df       	rcall	.-152    	; 0xbe <resetDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:112
+  writeByteDS18B20(DS18B20_CMD_SKIPROM); // пропуск ПЗУ(ROM)
+ 156:	8c ec       	ldi	r24, 0xCC	; 204
+ 158:	d8 df       	rcall	.-80     	; 0x10a <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:113
+  writeByteDS18B20(DS18B20_CMD_CONVERTTEMP); // начать преобразование показаний температуры
+ 15a:	84 e4       	ldi	r24, 0x44	; 68
+ 15c:	d6 df       	rcall	.-84     	; 0x10a <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:115
+
+  while (!readBitDS18B20()); // ждать, пока преобразование не завершится
+ 15e:	c4 df       	rcall	.-120    	; 0xe8 <readBitDS18B20()>
+ 160:	88 23       	and	r24, r24
+ 162:	e9 f3       	breq	.-6      	; 0x15e <getTempDS18B20()+0xe>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:117
+
+  resetDS18B20(); // сброс
+ 164:	ac df       	rcall	.-168    	; 0xbe <resetDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:118
+  writeByteDS18B20(DS18B20_CMD_SKIPROM); // пропуск ПЗУ(ROM)
+ 166:	8c ec       	ldi	r24, 0xCC	; 204
+ 168:	d0 df       	rcall	.-96     	; 0x10a <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:119
+  writeByteDS18B20(DS18B20_CMD_RSCRATCHPAD); // читать scratchpad
+ 16a:	8e eb       	ldi	r24, 0xBE	; 190
+ 16c:	ce df       	rcall	.-100    	; 0x10a <writeByteDS18B20(unsigned char)>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:122
+
+  // прочитать 2 байта из scratchpad
+  temperatureL = readByteDS18B20();
+ 16e:	df df       	rcall	.-66     	; 0x12e <readByteDS18B20()>
+ 170:	c8 2f       	mov	r28, r24
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:123
+  temperatureH = readByteDS18B20();
+ 172:	dd df       	rcall	.-70     	; 0x12e <readByteDS18B20()>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:126
+
+  if (DS18B20_STOPINTERRUPTONREAD == 1) {
+    sei();
+ 174:	78 94       	sei
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:130
+  }
+
+  // преобразовать полученное 12 битное значение
+  retd = ((temperatureH << 8) + temperatureL) * 0.0625;
+ 176:	68 2f       	mov	r22, r24
+ 178:	70 e0       	ldi	r23, 0x00	; 0
+ 17a:	76 2f       	mov	r23, r22
+ 17c:	66 27       	eor	r22, r22
+ 17e:	6c 0f       	add	r22, r28
+ 180:	71 1d       	adc	r23, r1
+ 182:	07 2e       	mov	r0, r23
+ 184:	00 0c       	add	r0, r0
+ 186:	88 0b       	sbc	r24, r24
+ 188:	99 0b       	sbc	r25, r25
+ 18a:	2b d2       	rcall	.+1110   	; 0x5e2 <__floatsisf>
+ 18c:	20 e0       	ldi	r18, 0x00	; 0
+ 18e:	30 e0       	ldi	r19, 0x00	; 0
+ 190:	40 e8       	ldi	r20, 0x80	; 128
+ 192:	5d e3       	ldi	r21, 0x3D	; 61
+ 194:	b2 d2       	rcall	.+1380   	; 0x6fa <__mulsf3>
+C:\Users\rOnan\Documents\Arduino\2313test2/ds18b20.cpp:133
+
+  return retd;
+ 196:	cf 91       	pop	r28
+ 198:	08 95       	ret
+
+0000019a <main>:
+main():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:6
+#include <Arduino.h>
+
+int main(void)
+{
+	#ifdef TUNED_OSCCAL_VALUE
+	OSCCAL = TUNED_OSCCAL_VALUE; //set the oscillator calibration value based on the pins_arduino.h file. If this is not set, it will be optimised away
+ 19a:	81 b7       	in	r24, 0x31	; 49
+ 19c:	81 bf       	out	0x31, r24	; 49
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:8
+    #endif
+    init();
+ 19e:	9e d0       	rcall	.+316    	; 0x2dc <init>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:10
+
+	setup();
+ 1a0:	76 df       	rcall	.-276    	; 0x8e <setup>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/main.cpp:13 (discriminator 1)
+    
+	for (;;)
+		loop();
+ 1a2:	78 df       	rcall	.-272    	; 0x94 <loop>
+ 1a4:	fe cf       	rjmp	.-4      	; 0x1a2 <main+0x8>
+
+000001a6 <__vector_6>:
+__vector_6():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:592
+#endif
+  #if INITIALIZE_SECONDARY_TIMERS
+  // Prepare the timer for PWM
+    initToneTimerInternal();
+  #endif
+}
+ 1a6:	1f 92       	push	r1
+ 1a8:	0f 92       	push	r0
+ 1aa:	0f b6       	in	r0, 0x3f	; 63
+ 1ac:	0f 92       	push	r0
+ 1ae:	11 24       	eor	r1, r1
+ 1b0:	2f 93       	push	r18
+ 1b2:	3f 93       	push	r19
+ 1b4:	8f 93       	push	r24
+ 1b6:	9f 93       	push	r25
+ 1b8:	af 93       	push	r26
+ 1ba:	bf 93       	push	r27
+ 1bc:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <millis_timer_millis>
+ 1c0:	90 91 62 00 	lds	r25, 0x0062	; 0x800062 <millis_timer_millis+0x1>
+ 1c4:	a0 91 63 00 	lds	r26, 0x0063	; 0x800063 <millis_timer_millis+0x2>
+ 1c8:	b0 91 64 00 	lds	r27, 0x0064	; 0x800064 <millis_timer_millis+0x3>
+ 1cc:	30 91 60 00 	lds	r19, 0x0060	; 0x800060 <_edata>
+ 1d0:	26 e0       	ldi	r18, 0x06	; 6
+ 1d2:	23 0f       	add	r18, r19
+ 1d4:	2d 37       	cpi	r18, 0x7D	; 125
+ 1d6:	68 f1       	brcs	.+90     	; 0x232 <__vector_6+0x8c>
+ 1d8:	29 e8       	ldi	r18, 0x89	; 137
+ 1da:	23 0f       	add	r18, r19
+ 1dc:	03 96       	adiw	r24, 0x03	; 3
+ 1de:	a1 1d       	adc	r26, r1
+ 1e0:	b1 1d       	adc	r27, r1
+ 1e2:	20 93 60 00 	sts	0x0060, r18	; 0x800060 <_edata>
+ 1e6:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <millis_timer_millis>
+ 1ea:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <millis_timer_millis+0x1>
+ 1ee:	a0 93 63 00 	sts	0x0063, r26	; 0x800063 <millis_timer_millis+0x2>
+ 1f2:	b0 93 64 00 	sts	0x0064, r27	; 0x800064 <millis_timer_millis+0x3>
+ 1f6:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <millis_timer_overflow_count>
+ 1fa:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <millis_timer_overflow_count+0x1>
+ 1fe:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <millis_timer_overflow_count+0x2>
+ 202:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <millis_timer_overflow_count+0x3>
+ 206:	01 96       	adiw	r24, 0x01	; 1
+ 208:	a1 1d       	adc	r26, r1
+ 20a:	b1 1d       	adc	r27, r1
+ 20c:	80 93 65 00 	sts	0x0065, r24	; 0x800065 <millis_timer_overflow_count>
+ 210:	90 93 66 00 	sts	0x0066, r25	; 0x800066 <millis_timer_overflow_count+0x1>
+ 214:	a0 93 67 00 	sts	0x0067, r26	; 0x800067 <millis_timer_overflow_count+0x2>
+ 218:	b0 93 68 00 	sts	0x0068, r27	; 0x800068 <millis_timer_overflow_count+0x3>
+ 21c:	bf 91       	pop	r27
+ 21e:	af 91       	pop	r26
+ 220:	9f 91       	pop	r25
+ 222:	8f 91       	pop	r24
+ 224:	3f 91       	pop	r19
+ 226:	2f 91       	pop	r18
+ 228:	0f 90       	pop	r0
+ 22a:	0f be       	out	0x3f, r0	; 63
+ 22c:	0f 90       	pop	r0
+ 22e:	1f 90       	pop	r1
+ 230:	18 95       	reti
+ 232:	02 96       	adiw	r24, 0x02	; 2
+ 234:	a1 1d       	adc	r26, r1
+ 236:	b1 1d       	adc	r27, r1
+ 238:	d4 cf       	rjmp	.-88     	; 0x1e2 <__vector_6+0x3c>
+
+0000023a <micros>:
+micros():
+ 23a:	3f b7       	in	r19, 0x3f	; 63
+ 23c:	f8 94       	cli
+ 23e:	80 91 65 00 	lds	r24, 0x0065	; 0x800065 <millis_timer_overflow_count>
+ 242:	90 91 66 00 	lds	r25, 0x0066	; 0x800066 <millis_timer_overflow_count+0x1>
+ 246:	a0 91 67 00 	lds	r26, 0x0067	; 0x800067 <millis_timer_overflow_count+0x2>
+ 24a:	b0 91 68 00 	lds	r27, 0x0068	; 0x800068 <millis_timer_overflow_count+0x3>
+ 24e:	22 b7       	in	r18, 0x32	; 50
+ 250:	08 b6       	in	r0, 0x38	; 56
+ 252:	01 fe       	sbrs	r0, 1
+ 254:	05 c0       	rjmp	.+10     	; 0x260 <micros+0x26>
+ 256:	2f 3f       	cpi	r18, 0xFF	; 255
+ 258:	19 f0       	breq	.+6      	; 0x260 <micros+0x26>
+ 25a:	01 96       	adiw	r24, 0x01	; 1
+ 25c:	a1 1d       	adc	r26, r1
+ 25e:	b1 1d       	adc	r27, r1
+ 260:	3f bf       	out	0x3f, r19	; 63
+ 262:	ba 2f       	mov	r27, r26
+ 264:	a9 2f       	mov	r26, r25
+ 266:	98 2f       	mov	r25, r24
+ 268:	88 27       	eor	r24, r24
+ 26a:	bc 01       	movw	r22, r24
+ 26c:	cd 01       	movw	r24, r26
+ 26e:	62 0f       	add	r22, r18
+ 270:	71 1d       	adc	r23, r1
+ 272:	81 1d       	adc	r24, r1
+ 274:	91 1d       	adc	r25, r1
+ 276:	43 e0       	ldi	r20, 0x03	; 3
+ 278:	66 0f       	add	r22, r22
+ 27a:	77 1f       	adc	r23, r23
+ 27c:	88 1f       	adc	r24, r24
+ 27e:	99 1f       	adc	r25, r25
+ 280:	4a 95       	dec	r20
+ 282:	d1 f7       	brne	.-12     	; 0x278 <micros+0x3e>
+ 284:	08 95       	ret
+
+00000286 <yield>:
+__empty():
+ 286:	08 95       	ret
+
+00000288 <delay>:
+delay():
+ 288:	cf 92       	push	r12
+ 28a:	df 92       	push	r13
+ 28c:	ef 92       	push	r14
+ 28e:	ff 92       	push	r15
+ 290:	cf 93       	push	r28
+ 292:	df 93       	push	r29
+ 294:	6b 01       	movw	r12, r22
+ 296:	7c 01       	movw	r14, r24
+ 298:	d0 df       	rcall	.-96     	; 0x23a <micros>
+ 29a:	eb 01       	movw	r28, r22
+ 29c:	c1 14       	cp	r12, r1
+ 29e:	d1 04       	cpc	r13, r1
+ 2a0:	e1 04       	cpc	r14, r1
+ 2a2:	f1 04       	cpc	r15, r1
+ 2a4:	61 f0       	breq	.+24     	; 0x2be <delay+0x36>
+ 2a6:	ef df       	rcall	.-34     	; 0x286 <yield>
+ 2a8:	c8 df       	rcall	.-112    	; 0x23a <micros>
+ 2aa:	6c 1b       	sub	r22, r28
+ 2ac:	7d 0b       	sbc	r23, r29
+ 2ae:	68 3e       	cpi	r22, 0xE8	; 232
+ 2b0:	73 40       	sbci	r23, 0x03	; 3
+ 2b2:	a0 f3       	brcs	.-24     	; 0x29c <delay+0x14>
+ 2b4:	c1 14       	cp	r12, r1
+ 2b6:	d1 04       	cpc	r13, r1
+ 2b8:	e1 04       	cpc	r14, r1
+ 2ba:	f1 04       	cpc	r15, r1
+ 2bc:	39 f4       	brne	.+14     	; 0x2cc <delay+0x44>
+ 2be:	df 91       	pop	r29
+ 2c0:	cf 91       	pop	r28
+ 2c2:	ff 90       	pop	r15
+ 2c4:	ef 90       	pop	r14
+ 2c6:	df 90       	pop	r13
+ 2c8:	cf 90       	pop	r12
+ 2ca:	08 95       	ret
+ 2cc:	81 e0       	ldi	r24, 0x01	; 1
+ 2ce:	c8 1a       	sub	r12, r24
+ 2d0:	d1 08       	sbc	r13, r1
+ 2d2:	e1 08       	sbc	r14, r1
+ 2d4:	f1 08       	sbc	r15, r1
+ 2d6:	c8 51       	subi	r28, 0x18	; 24
+ 2d8:	dc 4f       	sbci	r29, 0xFC	; 252
+ 2da:	e6 cf       	rjmp	.-52     	; 0x2a8 <delay+0x20>
+
+000002dc <init>:
+init():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:753
+  #endif
+  #endif
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0) && defined(WGM01)
+  sbi(TCCR0A, WGM01);
+ 2dc:	80 b7       	in	r24, 0x30	; 48
+ 2de:	82 60       	ori	r24, 0x02	; 2
+ 2e0:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:754
+  sbi(TCCR0A, WGM00);
+ 2e2:	80 b7       	in	r24, 0x30	; 48
+ 2e4:	81 60       	ori	r24, 0x01	; 1
+ 2e6:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:777
+  #endif
+  
+  // Millis timer is always processor clock divided by MillisTimer_Prescale_Value (64)
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+   #ifdef TCCR0B
+    TCCR0B = (TCCR0B & ~((1<<CS02)|(1<<CS01)|(1<<CS00))) | (MillisTimer_Prescale_Index << CS00);
+ 2e8:	83 b7       	in	r24, 0x33	; 51
+ 2ea:	88 7f       	andi	r24, 0xF8	; 248
+ 2ec:	83 60       	ori	r24, 0x03	; 3
+ 2ee:	83 bf       	out	0x33, r24	; 51
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:789
+  TCCR1B = (TCCR1B & ~((1<<CS13)|(1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #elif (TIMER_TO_USE_FOR_MILLIS == 1)
+  TCCR1B = (TCCR1B & ~((1<<CS12)|(1<<CS11)|(1<<CS10))) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 2f0:	78 94       	sei
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:793
+  
+  // Enable the overlow interrupt (this is the basic system tic-toc for millis)
+  #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+  sbi(TIMSK, TOIE0);
+ 2f2:	89 b7       	in	r24, 0x39	; 57
+ 2f4:	82 60       	ori	r24, 0x02	; 2
+ 2f6:	89 bf       	out	0x39, r24	; 57
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring.c:818
+	ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+    // enable a2d conversions
+    sbi(ADCSRA, ADEN);
+  #endif
+  #endif
+}
+ 2f8:	08 95       	ret
+
+000002fa <analogWrite>:
+analogWrite():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:95
+// Right now, PWM output only works on the pins with
+// hardware support.  These are defined in the appropriate
+// pins_*.c file.  For the rest of the pins, we default
+// to digital output.
+void analogWrite(uint8_t pin, int val)
+{
+ 2fa:	1f 93       	push	r17
+ 2fc:	cf 93       	push	r28
+ 2fe:	df 93       	push	r29
+ 300:	18 2f       	mov	r17, r24
+ 302:	eb 01       	movw	r28, r22
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:101
+  // We need to make sure the PWM output is enabled for those pins
+  // that support it, as we turn it off when digitally reading or
+  // writing with them.  Also, make sure the pin is in output mode
+  // for consistenty with Wiring, which doesn't require a pinMode
+  // call for the analog output pins.
+  pinMode(pin, OUTPUT);
+ 304:	61 e0       	ldi	r22, 0x01	; 1
+ 306:	66 d0       	rcall	.+204    	; 0x3d4 <pinMode>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:103
+
+  if (val <= 0)
+ 308:	1c 16       	cp	r1, r28
+ 30a:	1d 06       	cpc	r1, r29
+ 30c:	34 f0       	brlt	.+12     	; 0x31a <analogWrite+0x20>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:105
+  {
+    digitalWrite(pin, LOW);
+ 30e:	60 e0       	ldi	r22, 0x00	; 0
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:109
+  }
+  else if (val >= 255)
+  {
+    digitalWrite(pin, HIGH);
+ 310:	81 2f       	mov	r24, r17
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:216
+        digitalWrite(pin, HIGH);
+      }
+    }
+
+  }
+}
+ 312:	df 91       	pop	r29
+ 314:	cf 91       	pop	r28
+ 316:	1f 91       	pop	r17
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:109
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val >= 255)
+  {
+    digitalWrite(pin, HIGH);
+ 318:	9b c0       	rjmp	.+310    	; 0x450 <digitalWrite>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:107
+
+  if (val <= 0)
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val >= 255)
+ 31a:	cf 3f       	cpi	r28, 0xFF	; 255
+ 31c:	d1 05       	cpc	r29, r1
+ 31e:	14 f0       	brlt	.+4      	; 0x324 <analogWrite+0x2a>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:109
+  {
+    digitalWrite(pin, HIGH);
+ 320:	61 e0       	ldi	r22, 0x01	; 1
+ 322:	f6 cf       	rjmp	.-20     	; 0x310 <analogWrite+0x16>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:113
+  }
+  else
+  {
+    uint8_t timer = digitalPinToTimer(pin);
+ 324:	e1 2f       	mov	r30, r17
+ 326:	f0 e0       	ldi	r31, 0x00	; 0
+ 328:	ea 5d       	subi	r30, 0xDA	; 218
+ 32a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 32c:	e4 91       	lpm	r30, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:115
+	#if defined(TCCR0A) && defined(COM0A1)
+	if( timer == TIMER0A){
+ 32e:	e1 30       	cpi	r30, 0x01	; 1
+ 330:	59 f4       	brne	.+22     	; 0x348 <analogWrite+0x4e>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:117
+		// connect pwm to pin on timer 0, channel A
+		sbi(TCCR0A, COM0A1);
+ 332:	80 b7       	in	r24, 0x30	; 48
+ 334:	80 68       	ori	r24, 0x80	; 128
+ 336:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:118
+		cbi(TCCR0A, COM0A0);
+ 338:	80 b7       	in	r24, 0x30	; 48
+ 33a:	8f 7b       	andi	r24, 0xBF	; 191
+ 33c:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:119
+		OCR0A = val; // set pwm duty
+ 33e:	c6 bf       	out	0x36, r28	; 54
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:216
+        digitalWrite(pin, HIGH);
+      }
+    }
+
+  }
+}
+ 340:	df 91       	pop	r29
+ 342:	cf 91       	pop	r28
+ 344:	1f 91       	pop	r17
+ 346:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:124
+		OCR0A = val; // set pwm duty
+	} else
+	#endif
+
+	#if defined(TCCR0A) && defined(COM0B1)
+	if( timer == TIMER0B){
+ 348:	e2 30       	cpi	r30, 0x02	; 2
+ 34a:	41 f4       	brne	.+16     	; 0x35c <analogWrite+0x62>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:126
+		// connect pwm to pin on timer 0, channel B
+		sbi(TCCR0A, COM0B1);
+ 34c:	80 b7       	in	r24, 0x30	; 48
+ 34e:	80 62       	ori	r24, 0x20	; 32
+ 350:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:127
+		cbi(TCCR0A, COM0B0);
+ 352:	80 b7       	in	r24, 0x30	; 48
+ 354:	8f 7e       	andi	r24, 0xEF	; 239
+ 356:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:128
+		OCR0B = val; // set pwm duty
+ 358:	cc bf       	out	0x3c, r28	; 60
+ 35a:	f2 cf       	rjmp	.-28     	; 0x340 <analogWrite+0x46>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:135
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1A1) && !defined(TCCR1E) 
+		//TCCR1E is present only on tiny861, and there's no TCCR1A on Tiny85. 
+		//So this handles "normal" timers
+	if( timer == TIMER1A){
+ 35c:	e3 30       	cpi	r30, 0x03	; 3
+ 35e:	49 f4       	brne	.+18     	; 0x372 <analogWrite+0x78>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:137
+		// connect pwm to pin on timer 1, channel A
+		sbi(TCCR1A, COM1A1);
+ 360:	8f b5       	in	r24, 0x2f	; 47
+ 362:	80 68       	ori	r24, 0x80	; 128
+ 364:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:138
+		cbi(TCCR1A, COM1A0);
+ 366:	8f b5       	in	r24, 0x2f	; 47
+ 368:	8f 7b       	andi	r24, 0xBF	; 191
+ 36a:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:145
+		cbi(TCCR1D, OC1AV);
+		cbi(TCCR1D, OC1AU);
+		cbi(TCCR1D, OC1AW);
+		sbi(TCCR1D, OC1AX);
+	#endif
+		OCR1A = val; // set pwm duty
+ 36c:	db bd       	out	0x2b, r29	; 43
+ 36e:	ca bd       	out	0x2a, r28	; 42
+ 370:	e7 cf       	rjmp	.-50     	; 0x340 <analogWrite+0x46>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:181
+		OCR1A = val; // set pwm duty
+	} else
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1B1) && !defined(TCCR1E)
+	if( timer == TIMER1B){
+ 372:	e4 30       	cpi	r30, 0x04	; 4
+ 374:	49 f4       	brne	.+18     	; 0x388 <analogWrite+0x8e>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:183
+		// connect pwm to pin on timer 1, channel B
+		sbi(TCCR1A, COM1B1);
+ 376:	8f b5       	in	r24, 0x2f	; 47
+ 378:	80 62       	ori	r24, 0x20	; 32
+ 37a:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:184
+		cbi(TCCR1A, COM1B0);
+ 37c:	8f b5       	in	r24, 0x2f	; 47
+ 37e:	8f 7e       	andi	r24, 0xEF	; 239
+ 380:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:191
+		sbi(TCCR1D, OC1BV);
+		cbi(TCCR1D, OC1BU);
+		cbi(TCCR1D, OC1BW);
+		cbi(TCCR1D, OC1BX);
+	#endif
+		OCR1B = val; // set pwm duty
+ 382:	d9 bd       	out	0x29, r29	; 41
+ 384:	c8 bd       	out	0x28, r28	; 40
+ 386:	dc cf       	rjmp	.-72     	; 0x340 <analogWrite+0x46>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_analog.c:205
+		OCR1B = val; // set pwm duty
+	} else
+	#endif
+	
+    {
+      if (val < 128)
+ 388:	c0 38       	cpi	r28, 0x80	; 128
+ 38a:	d1 05       	cpc	r29, r1
+ 38c:	4c f6       	brge	.-110    	; 0x320 <analogWrite+0x26>
+ 38e:	bf cf       	rjmp	.-130    	; 0x30e <analogWrite+0x14>
+
+00000390 <turnOffPWM>:
+turnOffPWM():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+	#if defined(TCCR0A) && defined(COM0A1)
+	if( timer == TIMER0A){
+ 390:	81 30       	cpi	r24, 0x01	; 1
+ 392:	39 f4       	brne	.+14     	; 0x3a2 <turnOffPWM+0x12>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:68
+		cbi(TCCR0A, COM0A1);
+ 394:	80 b7       	in	r24, 0x30	; 48
+ 396:	8f 77       	andi	r24, 0x7F	; 127
+ 398:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:69
+		cbi(TCCR0A, COM0A0);
+ 39a:	80 b7       	in	r24, 0x30	; 48
+ 39c:	8f 7b       	andi	r24, 0xBF	; 191
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:76
+	#endif
+
+	#if defined(TCCR0A) && defined(COM0B1)
+	if( timer == TIMER0B){
+		cbi(TCCR0A, COM0B1);
+		cbi(TCCR0A, COM0B0);
+ 39e:	80 bf       	out	0x30, r24	; 48
+ 3a0:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:74
+		cbi(TCCR0A, COM0A0);
+	} else
+	#endif
+
+	#if defined(TCCR0A) && defined(COM0B1)
+	if( timer == TIMER0B){
+ 3a2:	82 30       	cpi	r24, 0x02	; 2
+ 3a4:	31 f4       	brne	.+12     	; 0x3b2 <turnOffPWM+0x22>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:75
+		cbi(TCCR0A, COM0B1);
+ 3a6:	80 b7       	in	r24, 0x30	; 48
+ 3a8:	8f 7d       	andi	r24, 0xDF	; 223
+ 3aa:	80 bf       	out	0x30, r24	; 48
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:76
+		cbi(TCCR0A, COM0B0);
+ 3ac:	80 b7       	in	r24, 0x30	; 48
+ 3ae:	8f 7e       	andi	r24, 0xEF	; 239
+ 3b0:	f6 cf       	rjmp	.-20     	; 0x39e <turnOffPWM+0xe>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:81
+	} else
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1A1)
+	if( timer == TIMER1A){
+ 3b2:	83 30       	cpi	r24, 0x03	; 3
+ 3b4:	39 f4       	brne	.+14     	; 0x3c4 <turnOffPWM+0x34>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:82
+		cbi(TCCR1A, COM1A1);
+ 3b6:	8f b5       	in	r24, 0x2f	; 47
+ 3b8:	8f 77       	andi	r24, 0x7F	; 127
+ 3ba:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:83
+		cbi(TCCR1A, COM1A0);
+ 3bc:	8f b5       	in	r24, 0x2f	; 47
+ 3be:	8f 7b       	andi	r24, 0xBF	; 191
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:117
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1B1)
+	if( timer == TIMER1B){
+		cbi(TCCR1A, COM1B1);
+		cbi(TCCR1A, COM1B0);
+ 3c0:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:134
+	#endif
+	
+    {
+    }
+
+}
+ 3c2:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:115
+	#endif
+	} else
+	#endif
+
+	#if defined(TCCR1A) && defined(COM1B1)
+	if( timer == TIMER1B){
+ 3c4:	84 30       	cpi	r24, 0x04	; 4
+ 3c6:	e9 f7       	brne	.-6      	; 0x3c2 <turnOffPWM+0x32>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:116
+		cbi(TCCR1A, COM1B1);
+ 3c8:	8f b5       	in	r24, 0x2f	; 47
+ 3ca:	8f 7d       	andi	r24, 0xDF	; 223
+ 3cc:	8f bd       	out	0x2f, r24	; 47
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:117
+		cbi(TCCR1A, COM1B0);
+ 3ce:	8f b5       	in	r24, 0x2f	; 47
+ 3d0:	8f 7e       	andi	r24, 0xEF	; 239
+ 3d2:	f6 cf       	rjmp	.-20     	; 0x3c0 <turnOffPWM+0x30>
+
+000003d4 <pinMode>:
+pinMode():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 3d4:	cf 93       	push	r28
+ 3d6:	df 93       	push	r29
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:34
+	if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 3d8:	87 fd       	sbrc	r24, 7
+ 3da:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:35
+	uint8_t bit = digitalPinToBitMask(pin);
+ 3dc:	90 e0       	ldi	r25, 0x00	; 0
+ 3de:	fc 01       	movw	r30, r24
+ 3e0:	e8 5c       	subi	r30, 0xC8	; 200
+ 3e2:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3e4:	24 91       	lpm	r18, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:36
+	uint8_t port = digitalPinToPort(pin);
+ 3e6:	86 5b       	subi	r24, 0xB6	; 182
+ 3e8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 3ea:	fc 01       	movw	r30, r24
+ 3ec:	84 91       	lpm	r24, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:39
+	volatile uint8_t *reg, *out;
+
+	if (port == NOT_A_PIN) return;
+ 3ee:	88 23       	and	r24, r24
+ 3f0:	c9 f0       	breq	.+50     	; 0x424 <__LOCK_REGION_LENGTH__+0x24>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:41
+
+	reg = portModeRegister(port);
+ 3f2:	90 e0       	ldi	r25, 0x00	; 0
+ 3f4:	88 0f       	add	r24, r24
+ 3f6:	99 1f       	adc	r25, r25
+ 3f8:	fc 01       	movw	r30, r24
+ 3fa:	ea 59       	subi	r30, 0x9A	; 154
+ 3fc:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3fe:	a5 91       	lpm	r26, Z+
+ 400:	b4 91       	lpm	r27, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:42
+	out = portOutputRegister(port);
+ 402:	fc 01       	movw	r30, r24
+ 404:	e4 5a       	subi	r30, 0xA4	; 164
+ 406:	ff 4f       	sbci	r31, 0xFF	; 255
+ 408:	c5 91       	lpm	r28, Z+
+ 40a:	d4 91       	lpm	r29, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:44
+
+	if (mode == INPUT) { 
+ 40c:	61 11       	cpse	r22, r1
+ 40e:	0d c0       	rjmp	.+26     	; 0x42a <__LOCK_REGION_LENGTH__+0x2a>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:45
+		uint8_t oldSREG = SREG;
+ 410:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:46
+                cli();
+ 412:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:47
+		*reg &= ~bit;
+ 414:	8c 91       	ld	r24, X
+ 416:	20 95       	com	r18
+ 418:	82 23       	and	r24, r18
+ 41a:	8c 93       	st	X, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:48
+		*out &= ~bit;
+ 41c:	88 81       	ld	r24, Y
+ 41e:	28 23       	and	r18, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:54
+		SREG = oldSREG;
+	} else if (mode == INPUT_PULLUP) {
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg &= ~bit;
+		*out |= bit;
+ 420:	28 83       	st	Y, r18
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:55
+		SREG = oldSREG;
+ 422:	9f bf       	out	0x3f, r25	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:62
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg |= bit;
+		SREG = oldSREG;
+	}
+}
+ 424:	df 91       	pop	r29
+ 426:	cf 91       	pop	r28
+ 428:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:50
+		uint8_t oldSREG = SREG;
+                cli();
+		*reg &= ~bit;
+		*out &= ~bit;
+		SREG = oldSREG;
+	} else if (mode == INPUT_PULLUP) {
+ 42a:	62 30       	cpi	r22, 0x02	; 2
+ 42c:	51 f4       	brne	.+20     	; 0x442 <__LOCK_REGION_LENGTH__+0x42>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:51
+		uint8_t oldSREG = SREG;
+ 42e:	9f b7       	in	r25, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:52
+                cli();
+ 430:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:53
+		*reg &= ~bit;
+ 432:	3c 91       	ld	r19, X
+ 434:	82 2f       	mov	r24, r18
+ 436:	80 95       	com	r24
+ 438:	83 23       	and	r24, r19
+ 43a:	8c 93       	st	X, r24
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:54
+		*out |= bit;
+ 43c:	e8 81       	ld	r30, Y
+ 43e:	2e 2b       	or	r18, r30
+ 440:	ef cf       	rjmp	.-34     	; 0x420 <__LOCK_REGION_LENGTH__+0x20>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:57
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+ 442:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:58
+                cli();
+ 444:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:59
+		*reg |= bit;
+ 446:	ec 91       	ld	r30, X
+ 448:	2e 2b       	or	r18, r30
+ 44a:	2c 93       	st	X, r18
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:60
+		SREG = oldSREG;
+ 44c:	8f bf       	out	0x3f, r24	; 63
+ 44e:	ea cf       	rjmp	.-44     	; 0x424 <__LOCK_REGION_LENGTH__+0x24>
+
+00000450 <digitalWrite>:
+digitalWrite():
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:137
+    }
+
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+ 450:	1f 93       	push	r17
+ 452:	cf 93       	push	r28
+ 454:	df 93       	push	r29
+ 456:	16 2f       	mov	r17, r22
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:138
+	if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+ 458:	87 fd       	sbrc	r24, 7
+ 45a:	8f ef       	ldi	r24, 0xFF	; 255
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:139
+	uint8_t timer = digitalPinToTimer(pin);
+ 45c:	28 2f       	mov	r18, r24
+ 45e:	30 e0       	ldi	r19, 0x00	; 0
+ 460:	f9 01       	movw	r30, r18
+ 462:	ea 5d       	subi	r30, 0xDA	; 218
+ 464:	ff 4f       	sbci	r31, 0xFF	; 255
+ 466:	84 91       	lpm	r24, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:140
+	uint8_t bit = digitalPinToBitMask(pin);
+ 468:	f9 01       	movw	r30, r18
+ 46a:	e8 5c       	subi	r30, 0xC8	; 200
+ 46c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 46e:	d4 91       	lpm	r29, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:141
+	uint8_t port = digitalPinToPort(pin);
+ 470:	f9 01       	movw	r30, r18
+ 472:	e6 5b       	subi	r30, 0xB6	; 182
+ 474:	ff 4f       	sbci	r31, 0xFF	; 255
+ 476:	c4 91       	lpm	r28, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:144
+	volatile uint8_t *out;
+
+	if (port == NOT_A_PIN) return;
+ 478:	cc 23       	and	r28, r28
+ 47a:	99 f0       	breq	.+38     	; 0x4a2 <digitalWrite+0x52>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:148
+
+	// If the pin that support PWM output, we need to turn it off
+	// before doing a digital write.
+	if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 47c:	81 11       	cpse	r24, r1
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:148 (discriminator 1)
+ 47e:	88 df       	rcall	.-240    	; 0x390 <turnOffPWM>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:150
+
+	out = portOutputRegister(port);
+ 480:	ec 2f       	mov	r30, r28
+ 482:	f0 e0       	ldi	r31, 0x00	; 0
+ 484:	ee 0f       	add	r30, r30
+ 486:	ff 1f       	adc	r31, r31
+ 488:	e4 5a       	subi	r30, 0xA4	; 164
+ 48a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 48c:	a5 91       	lpm	r26, Z+
+ 48e:	b4 91       	lpm	r27, Z
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:153
+
+	if (val == LOW) {
+		uint8_t oldSREG = SREG;
+ 490:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:152
+	// before doing a digital write.
+	if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+	out = portOutputRegister(port);
+
+	if (val == LOW) {
+ 492:	11 11       	cpse	r17, r1
+ 494:	0a c0       	rjmp	.+20     	; 0x4aa <digitalWrite+0x5a>
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:154
+		uint8_t oldSREG = SREG;
+    cli();
+ 496:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:155
+		*out &= ~bit;
+ 498:	ec 91       	ld	r30, X
+ 49a:	d0 95       	com	r29
+ 49c:	de 23       	and	r29, r30
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:160
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+    cli();
+		*out |= bit;
+ 49e:	dc 93       	st	X, r29
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:161
+		SREG = oldSREG;
+ 4a0:	8f bf       	out	0x3f, r24	; 63
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:163
+	}
+}
+ 4a2:	df 91       	pop	r29
+ 4a4:	cf 91       	pop	r28
+ 4a6:	1f 91       	pop	r17
+ 4a8:	08 95       	ret
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:159
+    cli();
+		*out &= ~bit;
+		SREG = oldSREG;
+	} else {
+		uint8_t oldSREG = SREG;
+    cli();
+ 4aa:	f8 94       	cli
+C:\Users\rOnan\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.2.2\cores\tiny/wiring_digital.c:160
+		*out |= bit;
+ 4ac:	ec 91       	ld	r30, X
+ 4ae:	de 2b       	or	r29, r30
+ 4b0:	f6 cf       	rjmp	.-20     	; 0x49e <digitalWrite+0x4e>
+
+000004b2 <__subsf3>:
+__subsf3():
+ 4b2:	50 58       	subi	r21, 0x80	; 128
+
+000004b4 <__addsf3>:
+ 4b4:	bb 27       	eor	r27, r27
+ 4b6:	aa 27       	eor	r26, r26
+ 4b8:	0e d0       	rcall	.+28     	; 0x4d6 <__addsf3x>
+ 4ba:	e5 c0       	rjmp	.+458    	; 0x686 <__fp_round>
+__addsf3():
+ 4bc:	d6 d0       	rcall	.+428    	; 0x66a <__fp_pscA>
+ 4be:	30 f0       	brcs	.+12     	; 0x4cc <__addsf3+0x18>
+ 4c0:	db d0       	rcall	.+438    	; 0x678 <__fp_pscB>
+ 4c2:	20 f0       	brcs	.+8      	; 0x4cc <__addsf3+0x18>
+ 4c4:	31 f4       	brne	.+12     	; 0x4d2 <__addsf3+0x1e>
+ 4c6:	9f 3f       	cpi	r25, 0xFF	; 255
+ 4c8:	11 f4       	brne	.+4      	; 0x4ce <__addsf3+0x1a>
+ 4ca:	1e f4       	brtc	.+6      	; 0x4d2 <__addsf3+0x1e>
+ 4cc:	cb c0       	rjmp	.+406    	; 0x664 <__fp_nan>
+ 4ce:	0e f4       	brtc	.+2      	; 0x4d2 <__addsf3+0x1e>
+ 4d0:	e0 95       	com	r30
+ 4d2:	e7 fb       	bst	r30, 7
+ 4d4:	c1 c0       	rjmp	.+386    	; 0x658 <__fp_inf>
+
+000004d6 <__addsf3x>:
+__addsf3x():
+ 4d6:	e9 2f       	mov	r30, r25
+ 4d8:	e7 d0       	rcall	.+462    	; 0x6a8 <__fp_split3>
+ 4da:	80 f3       	brcs	.-32     	; 0x4bc <__addsf3+0x8>
+ 4dc:	ba 17       	cp	r27, r26
+ 4de:	62 07       	cpc	r22, r18
+ 4e0:	73 07       	cpc	r23, r19
+ 4e2:	84 07       	cpc	r24, r20
+ 4e4:	95 07       	cpc	r25, r21
+ 4e6:	18 f0       	brcs	.+6      	; 0x4ee <__addsf3x+0x18>
+ 4e8:	71 f4       	brne	.+28     	; 0x506 <__addsf3x+0x30>
+ 4ea:	9e f5       	brtc	.+102    	; 0x552 <__addsf3x+0x7c>
+ 4ec:	ff c0       	rjmp	.+510    	; 0x6ec <__fp_zero>
+ 4ee:	0e f4       	brtc	.+2      	; 0x4f2 <__addsf3x+0x1c>
+ 4f0:	e0 95       	com	r30
+ 4f2:	0b 2e       	mov	r0, r27
+ 4f4:	ba 2f       	mov	r27, r26
+ 4f6:	a0 2d       	mov	r26, r0
+ 4f8:	0b 01       	movw	r0, r22
+ 4fa:	b9 01       	movw	r22, r18
+ 4fc:	90 01       	movw	r18, r0
+ 4fe:	0c 01       	movw	r0, r24
+ 500:	ca 01       	movw	r24, r20
+ 502:	a0 01       	movw	r20, r0
+ 504:	11 24       	eor	r1, r1
+ 506:	ff 27       	eor	r31, r31
+ 508:	59 1b       	sub	r21, r25
+ 50a:	99 f0       	breq	.+38     	; 0x532 <__addsf3x+0x5c>
+ 50c:	59 3f       	cpi	r21, 0xF9	; 249
+ 50e:	50 f4       	brcc	.+20     	; 0x524 <__addsf3x+0x4e>
+ 510:	50 3e       	cpi	r21, 0xE0	; 224
+ 512:	68 f1       	brcs	.+90     	; 0x56e <__addsf3x+0x98>
+ 514:	1a 16       	cp	r1, r26
+ 516:	f0 40       	sbci	r31, 0x00	; 0
+ 518:	a2 2f       	mov	r26, r18
+ 51a:	23 2f       	mov	r18, r19
+ 51c:	34 2f       	mov	r19, r20
+ 51e:	44 27       	eor	r20, r20
+ 520:	58 5f       	subi	r21, 0xF8	; 248
+ 522:	f3 cf       	rjmp	.-26     	; 0x50a <__addsf3x+0x34>
+ 524:	46 95       	lsr	r20
+ 526:	37 95       	ror	r19
+ 528:	27 95       	ror	r18
+ 52a:	a7 95       	ror	r26
+ 52c:	f0 40       	sbci	r31, 0x00	; 0
+ 52e:	53 95       	inc	r21
+ 530:	c9 f7       	brne	.-14     	; 0x524 <__addsf3x+0x4e>
+ 532:	7e f4       	brtc	.+30     	; 0x552 <__addsf3x+0x7c>
+ 534:	1f 16       	cp	r1, r31
+ 536:	ba 0b       	sbc	r27, r26
+ 538:	62 0b       	sbc	r22, r18
+ 53a:	73 0b       	sbc	r23, r19
+ 53c:	84 0b       	sbc	r24, r20
+ 53e:	ba f0       	brmi	.+46     	; 0x56e <__addsf3x+0x98>
+ 540:	91 50       	subi	r25, 0x01	; 1
+ 542:	a1 f0       	breq	.+40     	; 0x56c <__addsf3x+0x96>
+ 544:	ff 0f       	add	r31, r31
+ 546:	bb 1f       	adc	r27, r27
+ 548:	66 1f       	adc	r22, r22
+ 54a:	77 1f       	adc	r23, r23
+ 54c:	88 1f       	adc	r24, r24
+ 54e:	c2 f7       	brpl	.-16     	; 0x540 <__addsf3x+0x6a>
+ 550:	0e c0       	rjmp	.+28     	; 0x56e <__addsf3x+0x98>
+ 552:	ba 0f       	add	r27, r26
+ 554:	62 1f       	adc	r22, r18
+ 556:	73 1f       	adc	r23, r19
+ 558:	84 1f       	adc	r24, r20
+ 55a:	48 f4       	brcc	.+18     	; 0x56e <__addsf3x+0x98>
+ 55c:	87 95       	ror	r24
+ 55e:	77 95       	ror	r23
+ 560:	67 95       	ror	r22
+ 562:	b7 95       	ror	r27
+ 564:	f7 95       	ror	r31
+ 566:	9e 3f       	cpi	r25, 0xFE	; 254
+ 568:	08 f0       	brcs	.+2      	; 0x56c <__addsf3x+0x96>
+ 56a:	b3 cf       	rjmp	.-154    	; 0x4d2 <__addsf3+0x1e>
+ 56c:	93 95       	inc	r25
+ 56e:	88 0f       	add	r24, r24
+ 570:	08 f0       	brcs	.+2      	; 0x574 <__addsf3x+0x9e>
+ 572:	99 27       	eor	r25, r25
+ 574:	ee 0f       	add	r30, r30
+ 576:	97 95       	ror	r25
+ 578:	87 95       	ror	r24
+ 57a:	08 95       	ret
+
+0000057c <__fixsfsi>:
+ 57c:	04 d0       	rcall	.+8      	; 0x586 <__fixunssfsi>
+ 57e:	68 94       	set
+ 580:	b1 11       	cpse	r27, r1
+ 582:	b5 c0       	rjmp	.+362    	; 0x6ee <__fp_szero>
+ 584:	08 95       	ret
+
+00000586 <__fixunssfsi>:
+ 586:	98 d0       	rcall	.+304    	; 0x6b8 <__fp_splitA>
+ 588:	88 f0       	brcs	.+34     	; 0x5ac <__fixunssfsi+0x26>
+ 58a:	9f 57       	subi	r25, 0x7F	; 127
+ 58c:	90 f0       	brcs	.+36     	; 0x5b2 <__fixunssfsi+0x2c>
+ 58e:	b9 2f       	mov	r27, r25
+ 590:	99 27       	eor	r25, r25
+ 592:	b7 51       	subi	r27, 0x17	; 23
+ 594:	a0 f0       	brcs	.+40     	; 0x5be <__fixunssfsi+0x38>
+__fixunssfsi():
+ 596:	d1 f0       	breq	.+52     	; 0x5cc <__fixunssfsi+0x46>
+ 598:	66 0f       	add	r22, r22
+ 59a:	77 1f       	adc	r23, r23
+ 59c:	88 1f       	adc	r24, r24
+ 59e:	99 1f       	adc	r25, r25
+ 5a0:	1a f0       	brmi	.+6      	; 0x5a8 <__fixunssfsi+0x22>
+ 5a2:	ba 95       	dec	r27
+ 5a4:	c9 f7       	brne	.-14     	; 0x598 <__fixunssfsi+0x12>
+ 5a6:	12 c0       	rjmp	.+36     	; 0x5cc <__fixunssfsi+0x46>
+ 5a8:	b1 30       	cpi	r27, 0x01	; 1
+ 5aa:	81 f0       	breq	.+32     	; 0x5cc <__fixunssfsi+0x46>
+ 5ac:	9f d0       	rcall	.+318    	; 0x6ec <__fp_zero>
+ 5ae:	b1 e0       	ldi	r27, 0x01	; 1
+ 5b0:	08 95       	ret
+ 5b2:	9c c0       	rjmp	.+312    	; 0x6ec <__fp_zero>
+ 5b4:	67 2f       	mov	r22, r23
+ 5b6:	78 2f       	mov	r23, r24
+ 5b8:	88 27       	eor	r24, r24
+ 5ba:	b8 5f       	subi	r27, 0xF8	; 248
+ 5bc:	39 f0       	breq	.+14     	; 0x5cc <__fixunssfsi+0x46>
+ 5be:	b9 3f       	cpi	r27, 0xF9	; 249
+ 5c0:	cc f3       	brlt	.-14     	; 0x5b4 <__fixunssfsi+0x2e>
+ 5c2:	86 95       	lsr	r24
+ 5c4:	77 95       	ror	r23
+ 5c6:	67 95       	ror	r22
+ 5c8:	b3 95       	inc	r27
+ 5ca:	d9 f7       	brne	.-10     	; 0x5c2 <__fixunssfsi+0x3c>
+ 5cc:	3e f4       	brtc	.+14     	; 0x5dc <__fixunssfsi+0x56>
+ 5ce:	90 95       	com	r25
+ 5d0:	80 95       	com	r24
+ 5d2:	70 95       	com	r23
+ 5d4:	61 95       	neg	r22
+ 5d6:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5d8:	8f 4f       	sbci	r24, 0xFF	; 255
+ 5da:	9f 4f       	sbci	r25, 0xFF	; 255
+ 5dc:	08 95       	ret
+
+000005de <__floatunsisf>:
+__floatunsisf():
+ 5de:	e8 94       	clt
+ 5e0:	09 c0       	rjmp	.+18     	; 0x5f4 <__floatsisf+0x12>
+
+000005e2 <__floatsisf>:
+ 5e2:	97 fb       	bst	r25, 7
+ 5e4:	3e f4       	brtc	.+14     	; 0x5f4 <__floatsisf+0x12>
+ 5e6:	90 95       	com	r25
+ 5e8:	80 95       	com	r24
+ 5ea:	70 95       	com	r23
+ 5ec:	61 95       	neg	r22
+ 5ee:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5f0:	8f 4f       	sbci	r24, 0xFF	; 255
+ 5f2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 5f4:	99 23       	and	r25, r25
+ 5f6:	a9 f0       	breq	.+42     	; 0x622 <__floatsisf+0x40>
+ 5f8:	f9 2f       	mov	r31, r25
+ 5fa:	96 e9       	ldi	r25, 0x96	; 150
+ 5fc:	bb 27       	eor	r27, r27
+ 5fe:	93 95       	inc	r25
+ 600:	f6 95       	lsr	r31
+ 602:	87 95       	ror	r24
+ 604:	77 95       	ror	r23
+ 606:	67 95       	ror	r22
+ 608:	b7 95       	ror	r27
+ 60a:	f1 11       	cpse	r31, r1
+ 60c:	f8 cf       	rjmp	.-16     	; 0x5fe <__floatsisf+0x1c>
+ 60e:	fa f4       	brpl	.+62     	; 0x64e <__floatsisf+0x6c>
+ 610:	bb 0f       	add	r27, r27
+ 612:	11 f4       	brne	.+4      	; 0x618 <__floatsisf+0x36>
+ 614:	60 ff       	sbrs	r22, 0
+ 616:	1b c0       	rjmp	.+54     	; 0x64e <__floatsisf+0x6c>
+ 618:	6f 5f       	subi	r22, 0xFF	; 255
+ 61a:	7f 4f       	sbci	r23, 0xFF	; 255
+ 61c:	8f 4f       	sbci	r24, 0xFF	; 255
+ 61e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 620:	16 c0       	rjmp	.+44     	; 0x64e <__floatsisf+0x6c>
+ 622:	88 23       	and	r24, r24
+ 624:	11 f0       	breq	.+4      	; 0x62a <__floatsisf+0x48>
+ 626:	96 e9       	ldi	r25, 0x96	; 150
+ 628:	11 c0       	rjmp	.+34     	; 0x64c <__floatsisf+0x6a>
+ 62a:	77 23       	and	r23, r23
+ 62c:	21 f0       	breq	.+8      	; 0x636 <__floatsisf+0x54>
+ 62e:	9e e8       	ldi	r25, 0x8E	; 142
+ 630:	87 2f       	mov	r24, r23
+ 632:	76 2f       	mov	r23, r22
+ 634:	05 c0       	rjmp	.+10     	; 0x640 <__floatsisf+0x5e>
+ 636:	66 23       	and	r22, r22
+ 638:	71 f0       	breq	.+28     	; 0x656 <__floatsisf+0x74>
+ 63a:	96 e8       	ldi	r25, 0x86	; 134
+ 63c:	86 2f       	mov	r24, r22
+ 63e:	70 e0       	ldi	r23, 0x00	; 0
+ 640:	60 e0       	ldi	r22, 0x00	; 0
+ 642:	2a f0       	brmi	.+10     	; 0x64e <__floatsisf+0x6c>
+ 644:	9a 95       	dec	r25
+ 646:	66 0f       	add	r22, r22
+ 648:	77 1f       	adc	r23, r23
+ 64a:	88 1f       	adc	r24, r24
+ 64c:	da f7       	brpl	.-10     	; 0x644 <__floatsisf+0x62>
+ 64e:	88 0f       	add	r24, r24
+ 650:	96 95       	lsr	r25
+ 652:	87 95       	ror	r24
+ 654:	97 f9       	bld	r25, 7
+ 656:	08 95       	ret
+
+00000658 <__fp_inf>:
+__fp_inf():
+ 658:	97 f9       	bld	r25, 7
+ 65a:	9f 67       	ori	r25, 0x7F	; 127
+ 65c:	80 e8       	ldi	r24, 0x80	; 128
+ 65e:	70 e0       	ldi	r23, 0x00	; 0
+ 660:	60 e0       	ldi	r22, 0x00	; 0
+ 662:	08 95       	ret
+
+00000664 <__fp_nan>:
+__fp_nan():
+ 664:	9f ef       	ldi	r25, 0xFF	; 255
+ 666:	80 ec       	ldi	r24, 0xC0	; 192
+ 668:	08 95       	ret
+
+0000066a <__fp_pscA>:
+__fp_pscA():
+ 66a:	00 24       	eor	r0, r0
+ 66c:	0a 94       	dec	r0
+ 66e:	16 16       	cp	r1, r22
+ 670:	17 06       	cpc	r1, r23
+ 672:	18 06       	cpc	r1, r24
+ 674:	09 06       	cpc	r0, r25
+ 676:	08 95       	ret
+
+00000678 <__fp_pscB>:
+__fp_pscB():
+ 678:	00 24       	eor	r0, r0
+ 67a:	0a 94       	dec	r0
+ 67c:	12 16       	cp	r1, r18
+ 67e:	13 06       	cpc	r1, r19
+ 680:	14 06       	cpc	r1, r20
+ 682:	05 06       	cpc	r0, r21
+ 684:	08 95       	ret
+
+00000686 <__fp_round>:
+__fp_round():
+ 686:	09 2e       	mov	r0, r25
+ 688:	03 94       	inc	r0
+ 68a:	00 0c       	add	r0, r0
+ 68c:	11 f4       	brne	.+4      	; 0x692 <__fp_round+0xc>
+ 68e:	88 23       	and	r24, r24
+ 690:	52 f0       	brmi	.+20     	; 0x6a6 <__fp_round+0x20>
+ 692:	bb 0f       	add	r27, r27
+ 694:	40 f4       	brcc	.+16     	; 0x6a6 <__fp_round+0x20>
+ 696:	bf 2b       	or	r27, r31
+ 698:	11 f4       	brne	.+4      	; 0x69e <__fp_round+0x18>
+ 69a:	60 ff       	sbrs	r22, 0
+ 69c:	04 c0       	rjmp	.+8      	; 0x6a6 <__fp_round+0x20>
+ 69e:	6f 5f       	subi	r22, 0xFF	; 255
+ 6a0:	7f 4f       	sbci	r23, 0xFF	; 255
+ 6a2:	8f 4f       	sbci	r24, 0xFF	; 255
+ 6a4:	9f 4f       	sbci	r25, 0xFF	; 255
+ 6a6:	08 95       	ret
+
+000006a8 <__fp_split3>:
+__fp_split3():
+ 6a8:	57 fd       	sbrc	r21, 7
+ 6aa:	90 58       	subi	r25, 0x80	; 128
+ 6ac:	44 0f       	add	r20, r20
+ 6ae:	55 1f       	adc	r21, r21
+ 6b0:	59 f0       	breq	.+22     	; 0x6c8 <__fp_splitA+0x10>
+ 6b2:	5f 3f       	cpi	r21, 0xFF	; 255
+ 6b4:	71 f0       	breq	.+28     	; 0x6d2 <__fp_splitA+0x1a>
+ 6b6:	47 95       	ror	r20
+
+000006b8 <__fp_splitA>:
+ 6b8:	88 0f       	add	r24, r24
+ 6ba:	97 fb       	bst	r25, 7
+ 6bc:	99 1f       	adc	r25, r25
+ 6be:	61 f0       	breq	.+24     	; 0x6d8 <__fp_splitA+0x20>
+ 6c0:	9f 3f       	cpi	r25, 0xFF	; 255
+ 6c2:	79 f0       	breq	.+30     	; 0x6e2 <__fp_splitA+0x2a>
+ 6c4:	87 95       	ror	r24
+ 6c6:	08 95       	ret
+ 6c8:	12 16       	cp	r1, r18
+ 6ca:	13 06       	cpc	r1, r19
+ 6cc:	14 06       	cpc	r1, r20
+ 6ce:	55 1f       	adc	r21, r21
+ 6d0:	f2 cf       	rjmp	.-28     	; 0x6b6 <__fp_split3+0xe>
+ 6d2:	46 95       	lsr	r20
+ 6d4:	f1 df       	rcall	.-30     	; 0x6b8 <__fp_splitA>
+ 6d6:	08 c0       	rjmp	.+16     	; 0x6e8 <__fp_splitA+0x30>
+ 6d8:	16 16       	cp	r1, r22
+ 6da:	17 06       	cpc	r1, r23
+ 6dc:	18 06       	cpc	r1, r24
+ 6de:	99 1f       	adc	r25, r25
+ 6e0:	f1 cf       	rjmp	.-30     	; 0x6c4 <__fp_splitA+0xc>
+ 6e2:	86 95       	lsr	r24
+ 6e4:	71 05       	cpc	r23, r1
+ 6e6:	61 05       	cpc	r22, r1
+ 6e8:	08 94       	sec
+ 6ea:	08 95       	ret
+
+000006ec <__fp_zero>:
+__fp_zero():
+ 6ec:	e8 94       	clt
+
+000006ee <__fp_szero>:
+ 6ee:	bb 27       	eor	r27, r27
+ 6f0:	66 27       	eor	r22, r22
+ 6f2:	77 27       	eor	r23, r23
+ 6f4:	cb 01       	movw	r24, r22
+ 6f6:	97 f9       	bld	r25, 7
+ 6f8:	08 95       	ret
+
+000006fa <__mulsf3>:
+__mulsf3():
+ 6fa:	0a d0       	rcall	.+20     	; 0x710 <__mulsf3x>
+ 6fc:	c4 cf       	rjmp	.-120    	; 0x686 <__fp_round>
+ 6fe:	b5 df       	rcall	.-150    	; 0x66a <__fp_pscA>
+ 700:	28 f0       	brcs	.+10     	; 0x70c <__mulsf3+0x12>
+ 702:	ba df       	rcall	.-140    	; 0x678 <__fp_pscB>
+ 704:	18 f0       	brcs	.+6      	; 0x70c <__mulsf3+0x12>
+ 706:	95 23       	and	r25, r21
+ 708:	09 f0       	breq	.+2      	; 0x70c <__mulsf3+0x12>
+ 70a:	a6 cf       	rjmp	.-180    	; 0x658 <__fp_inf>
+ 70c:	ab cf       	rjmp	.-170    	; 0x664 <__fp_nan>
+ 70e:	ef cf       	rjmp	.-34     	; 0x6ee <__fp_szero>
+
+00000710 <__mulsf3x>:
+__mulsf3x():
+ 710:	cb df       	rcall	.-106    	; 0x6a8 <__fp_split3>
+ 712:	a8 f3       	brcs	.-22     	; 0x6fe <__mulsf3+0x4>
+
+00000714 <__mulsf3_pse>:
+ 714:	99 23       	and	r25, r25
+ 716:	d9 f3       	breq	.-10     	; 0x70e <__mulsf3+0x14>
+ 718:	55 23       	and	r21, r21
+ 71a:	c9 f3       	breq	.-14     	; 0x70e <__mulsf3+0x14>
+ 71c:	95 0f       	add	r25, r21
+ 71e:	50 e0       	ldi	r21, 0x00	; 0
+ 720:	55 1f       	adc	r21, r21
+ 722:	aa 27       	eor	r26, r26
+ 724:	ee 27       	eor	r30, r30
+ 726:	ff 27       	eor	r31, r31
+ 728:	bb 27       	eor	r27, r27
+ 72a:	00 24       	eor	r0, r0
+ 72c:	08 94       	sec
+ 72e:	67 95       	ror	r22
+ 730:	20 f4       	brcc	.+8      	; 0x73a <__mulsf3_pse+0x26>
+ 732:	e2 0f       	add	r30, r18
+ 734:	f3 1f       	adc	r31, r19
+ 736:	b4 1f       	adc	r27, r20
+ 738:	0a 1e       	adc	r0, r26
+ 73a:	22 0f       	add	r18, r18
+ 73c:	33 1f       	adc	r19, r19
+ 73e:	44 1f       	adc	r20, r20
+ 740:	aa 1f       	adc	r26, r26
+ 742:	66 95       	lsr	r22
+ 744:	a9 f7       	brne	.-22     	; 0x730 <__mulsf3_pse+0x1c>
+ 746:	77 95       	ror	r23
+ 748:	30 f4       	brcc	.+12     	; 0x756 <__mulsf3_pse+0x42>
+ 74a:	f3 0f       	add	r31, r19
+ 74c:	b4 1f       	adc	r27, r20
+ 74e:	0a 1e       	adc	r0, r26
+ 750:	12 1e       	adc	r1, r18
+ 752:	08 f4       	brcc	.+2      	; 0x756 <__mulsf3_pse+0x42>
+ 754:	63 95       	inc	r22
+ 756:	33 0f       	add	r19, r19
+ 758:	44 1f       	adc	r20, r20
+ 75a:	aa 1f       	adc	r26, r26
+ 75c:	22 1f       	adc	r18, r18
+ 75e:	76 95       	lsr	r23
+ 760:	99 f7       	brne	.-26     	; 0x748 <__mulsf3_pse+0x34>
+ 762:	87 95       	ror	r24
+ 764:	20 f4       	brcc	.+8      	; 0x76e <__mulsf3_pse+0x5a>
+ 766:	b4 0f       	add	r27, r20
+ 768:	0a 1e       	adc	r0, r26
+ 76a:	12 1e       	adc	r1, r18
+ 76c:	63 1f       	adc	r22, r19
+ 76e:	44 0f       	add	r20, r20
+ 770:	aa 1f       	adc	r26, r26
+ 772:	22 1f       	adc	r18, r18
+ 774:	33 1f       	adc	r19, r19
+ 776:	86 95       	lsr	r24
+ 778:	a9 f7       	brne	.-22     	; 0x764 <__mulsf3_pse+0x50>
+ 77a:	86 2f       	mov	r24, r22
+ 77c:	71 2d       	mov	r23, r1
+ 77e:	60 2d       	mov	r22, r0
+ 780:	11 24       	eor	r1, r1
+ 782:	9f 57       	subi	r25, 0x7F	; 127
+ 784:	50 40       	sbci	r21, 0x00	; 0
+ 786:	8a f0       	brmi	.+34     	; 0x7aa <__mulsf3_pse+0x96>
+ 788:	e1 f0       	breq	.+56     	; 0x7c2 <__mulsf3_pse+0xae>
+ 78a:	88 23       	and	r24, r24
+ 78c:	4a f0       	brmi	.+18     	; 0x7a0 <__mulsf3_pse+0x8c>
+ 78e:	ee 0f       	add	r30, r30
+ 790:	ff 1f       	adc	r31, r31
+ 792:	bb 1f       	adc	r27, r27
+ 794:	66 1f       	adc	r22, r22
+ 796:	77 1f       	adc	r23, r23
+ 798:	88 1f       	adc	r24, r24
+ 79a:	91 50       	subi	r25, 0x01	; 1
+ 79c:	50 40       	sbci	r21, 0x00	; 0
+ 79e:	a9 f7       	brne	.-22     	; 0x78a <__mulsf3_pse+0x76>
+ 7a0:	9e 3f       	cpi	r25, 0xFE	; 254
+ 7a2:	51 05       	cpc	r21, r1
+ 7a4:	70 f0       	brcs	.+28     	; 0x7c2 <__mulsf3_pse+0xae>
+ 7a6:	58 cf       	rjmp	.-336    	; 0x658 <__fp_inf>
+ 7a8:	a2 cf       	rjmp	.-188    	; 0x6ee <__fp_szero>
+ 7aa:	5f 3f       	cpi	r21, 0xFF	; 255
+ 7ac:	ec f3       	brlt	.-6      	; 0x7a8 <__mulsf3_pse+0x94>
+ 7ae:	98 3e       	cpi	r25, 0xE8	; 232
+ 7b0:	dc f3       	brlt	.-10     	; 0x7a8 <__mulsf3_pse+0x94>
+ 7b2:	86 95       	lsr	r24
+ 7b4:	77 95       	ror	r23
+ 7b6:	67 95       	ror	r22
+ 7b8:	b7 95       	ror	r27
+ 7ba:	f7 95       	ror	r31
+ 7bc:	e7 95       	ror	r30
+ 7be:	9f 5f       	subi	r25, 0xFF	; 255
+ 7c0:	c1 f7       	brne	.-16     	; 0x7b2 <__mulsf3_pse+0x9e>
+ 7c2:	fe 2b       	or	r31, r30
+ 7c4:	88 0f       	add	r24, r24
+ 7c6:	91 1d       	adc	r25, r1
+ 7c8:	96 95       	lsr	r25
+ 7ca:	87 95       	ror	r24
+ 7cc:	97 f9       	bld	r25, 7
+ 7ce:	08 95       	ret
+
+000007d0 <_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ 7d0:	f8 94       	cli
+
+000007d2 <__stop_program>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ 7d2:	ff cf       	rjmp	.-2      	; 0x7d2 <__stop_program>
